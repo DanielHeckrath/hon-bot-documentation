@@ -138,11 +138,11 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityVector">CBotBrain:OrderAbilityVector&nbsp;(Ability, Vector3, Vector3, [)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityVector">CBotBrain:OrderAbilityVector&nbsp;(ability, startPos, endPos[, queueCommand])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderEntity">CBotBrain:OrderEntity&nbsp;(Unit, String, [, String, Item, bool)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderEntity">CBotBrain:OrderEntity&nbsp;(unit, order[, target][, queue][, item][, useDirectPathing])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -516,17 +516,17 @@
 </dd>
     <dt>
     <a name = "CBotBrain:OrderAbilityVector"></a>
-    <strong>CBotBrain:OrderAbilityVector&nbsp;(Ability, Vector3, Vector3, [)</strong>
+    <strong>CBotBrain:OrderAbilityVector&nbsp;(ability, startPos, endPos[, queueCommand])</strong>
     </dt>
     <dd>
     Function 
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Ability</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
+       <li><code><em>ability</em></code>: <strong>Ability</strong>  the ability</li>
+       <li><code><em>startPos</em></code>: <a href="../modules/Vector3.html#">Vector3</a>  the start position</li>
+       <li><code><em>endPos</em></code>: <a href="../modules/Vector3.html#">Vector3</a>  the end position</li>
+       <li><code><em>queueCommand</em></code>: <strong>bool</strong>  add the order to the command queue</li>
     </ul>
 
 
@@ -539,19 +539,19 @@
 </dd>
     <dt>
     <a name = "CBotBrain:OrderEntity"></a>
-    <strong>CBotBrain:OrderEntity&nbsp;(Unit, String, [, String, Item, bool)</strong>
+    <strong>CBotBrain:OrderEntity&nbsp;(unit, order[, target][, queue][, item][, useDirectPathing])</strong>
     </dt>
     <dd>
     Function 
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Unit</em></code>: </li>
-       <li><code><em>String</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-       <li><code><em>String</em></code>: </li>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>bool</em></code>: </li>
+       <li><code><em>unit</em></code>: <strong>Unit</strong>  the unit</li>
+       <li><code><em>order</em></code>: <strong>String</strong>  the order</li>
+       <li><code><em>target</em></code>: <strong>Unit</strong>  the target</li>
+       <li><code><em>queue</em></code>: <strong>String</strong>  the queue</li>
+       <li><code><em>item</em></code>: <strong>Item</strong>  the item</li>
+       <li><code><em>useDirectPathing</em></code>: <strong>bool</strong>  use direct pasing</li>
     </ul>
 
 
