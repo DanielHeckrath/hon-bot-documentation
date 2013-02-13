@@ -38,10 +38,10 @@
 
 <h2>Modules</h2>
 <ul>
-  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><strong>BotMetaData</strong></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
   <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
-  <li><strong>CBotMetaDataNode</strong></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
   <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
@@ -58,24 +58,32 @@
 
 <div id="content">
 
-<h1>Module <code>CBotMetaDataNode</code></h1>
+<h1>Module <code>BotMetaData</code></h1>
 
-<p>Module containing functions to deal with MetaDataNodes</p>
+<p>BotMetaData library</p>
 <p></p>
 
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetName">CBotMetaDataNode:GetName&nbsp;()</a></td>
-	<td class="summary">Function to get the nodes name</td>
+	<td class="name" nowrap><a href="#FindPath">FindPath&nbsp;(vecStartPos, vecEndPos, funcGetCost, funcGetHeuristic)</a></td>
+	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetPosition">CBotMetaDataNode:GetPosition&nbsp;()</a></td>
-	<td class="summary">Function to get the nodes position</td>
+	<td class="name" nowrap><a href="#GetClosestNode">GetClosestNode&nbsp;()</a></td>
+	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetProperty">CBotMetaDataNode:GetProperty&nbsp;(sName)</a></td>
-	<td class="summary">Function to get a property from the node</td>
+	<td class="name" nowrap><a href="#GetClosestNodeOnPath">GetClosestNodeOnPath&nbsp;(tPath, vecPos)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#RegisterLayer">RegisterLayer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#SetActiveLayer">SetActiveLayer&nbsp;()</a></td>
+	<td class="summary">Function</td>
 	</tr>
 </table>
 
@@ -87,53 +95,94 @@
     
     <dl class="function">
     <dt>
-    <a name = "CBotMetaDataNode:GetName"></a>
-    <strong>CBotMetaDataNode:GetName&nbsp;()</strong>
+    <a name = "FindPath"></a>
+    <strong>FindPath&nbsp;(vecStartPos, vecEndPos, funcGetCost, funcGetHeuristic)</strong>
     </dt>
     <dd>
-    Function to get the nodes name 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        String the nodes name
-    </ol>
-
-
-</dd>
-    <dt>
-    <a name = "CBotMetaDataNode:GetPosition"></a>
-    <strong>CBotMetaDataNode:GetPosition&nbsp;()</strong>
-    </dt>
-    <dd>
-    Function to get the nodes position 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        Vector3 the nodes position
-    </ol>
-
-
-</dd>
-    <dt>
-    <a name = "CBotMetaDataNode:GetProperty"></a>
-    <strong>CBotMetaDataNode:GetProperty&nbsp;(sName)</strong>
-    </dt>
-    <dd>
-    Function to get a property from the node 
+    Function 
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>sName</em></code>:  name of the property</li>
+       <li><code><em>vecStartPos</em></code>: </li>
+       <li><code><em>vecEndPos</em></code>: </li>
+       <li><code><em>funcGetCost</em></code>: </li>
+       <li><code><em>funcGetHeuristic</em></code>: </li>
     </ul>
 
 
     <h3>Returns:</h3>
     <ol>
-        String/Number/Boolean value of the property
+        <strong>Table</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "GetClosestNode"></a>
+    <strong>GetClosestNode&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <a href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "GetClosestNodeOnPath"></a>
+    <strong>GetClosestNodeOnPath&nbsp;(tPath, vecPos)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>tPath</em></code>: </li>
+       <li><code><em>vecPos</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li><a href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a> </li>
+        <li><strong>Number</strong> </li>
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "RegisterLayer"></a>
+    <strong>RegisterLayer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "SetActiveLayer"></a>
+    <strong>SetActiveLayer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> 
     </ol>
 
 

@@ -1,0 +1,1727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
+  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
+  <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
+  <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
+  <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
+  <li><a href="../modules/HonLibrary.html">HonLibrary</a></li>
+  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><a href="../modules/IBehavior.html">IBehavior</a></li>
+  <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
+  <li><strong>IEntityItem</strong></li>
+  <li><a href="../modules/IUnitEntity.html">IUnitEntity</a></li>
+  <li><a href="../modules/Vector3.html">Vector3</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>IEntityItem</code></h1>
+
+<p>IEntityItem members</p>
+<p></p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:CanActivate">IEntityItem:CanActivate&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:CanDrop">IEntityItem:CanDrop&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:CanUse">IEntityItem:CanUse&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetActiveManaCost">IEntityItem:GetActiveManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetActiveModifierKey">IEntityItem:GetActiveModifierKey&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowAutoCast">IEntityItem:GetAllowAutoCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowDisassemble">IEntityItem:GetAllowDisassemble&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowOutOfBoundsCast">IEntityItem:GetAllowOutOfBoundsCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowOutOfRangeCast">IEntityItem:GetAllowOutOfRangeCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowSharing">IEntityItem:GetAllowSharing&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAllowTransfer">IEntityItem:GetAllowTransfer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAreaCastRange">IEntityItem:GetAreaCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAutoAssemble">IEntityItem:GetAutoAssemble&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAutoRecharge">IEntityItem:GetAutoRecharge&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAutoToggleOffWhenDisabled">IEntityItem:GetAutoToggleOffWhenDisabled&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetAutoToggleOffWithTriggeredManaCost">IEntityItem:GetAutoToggleOffWithTriggeredManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetBindOnPickup">IEntityItem:GetBindOnPickup&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCastActionTime">IEntityItem:GetCastActionTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCastTime">IEntityItem:GetCastTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCategory">IEntityItem:GetCategory&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetChannelRange">IEntityItem:GetChannelRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetChannelTime">IEntityItem:GetChannelTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetChargeCost">IEntityItem:GetChargeCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCharges">IEntityItem:GetCharges&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetComponents">IEntityItem:GetComponents&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetConeCastRange">IEntityItem:GetConeCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetConeCastWidth">IEntityItem:GetConeCastWidth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCooldownOnDamage">IEntityItem:GetCooldownOnDamage&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCooldownTime">IEntityItem:GetCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetCost">IEntityItem:GetCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDeferChannelCost">IEntityItem:GetDeferChannelCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDeferChannelImpact">IEntityItem:GetDeferChannelImpact&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDestroyOnEmpty">IEntityItem:GetDestroyOnEmpty&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDisabled">IEntityItem:GetDisabled&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDoubleActivate">IEntityItem:GetDoubleActivate&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetDropOnDeath">IEntityItem:GetDropOnDeath&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetForceRange">IEntityItem:GetForceRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetFrontQueue">IEntityItem:GetFrontQueue&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetIgnoreCooldown">IEntityItem:GetIgnoreCooldown&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetIgnoreInvulnerable">IEntityItem:GetIgnoreInvulnerable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetInitialCharges">IEntityItem:GetInitialCharges&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetInitialStock">IEntityItem:GetInitialStock&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetIsChanneling">IEntityItem:GetIsChanneling&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetItemDefinition">IEntityItem:GetItemDefinition&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetLevel">IEntityItem:GetLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetLineCastMaxRange">IEntityItem:GetLineCastMaxRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetLineCastRange">IEntityItem:GetLineCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetLineCastWidth">IEntityItem:GetLineCastWidth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetManaCost">IEntityItem:GetManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetMaxCharges">IEntityItem:GetMaxCharges&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetMaxLevel">IEntityItem:GetMaxLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetMaxStock">IEntityItem:GetMaxStock&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetMinRange">IEntityItem:GetMinRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNeedVision">IEntityItem:GetNeedVision&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoDrop">IEntityItem:GetNoDrop&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNonInterrupting">IEntityItem:GetNonInterrupting&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoPurchase">IEntityItem:GetNoPurchase&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoRangeClamp">IEntityItem:GetNoRangeClamp&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoSell">IEntityItem:GetNoSell&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoStash">IEntityItem:GetNoStash&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoStun">IEntityItem:GetNoStun&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoTargetIgnoreInvulnerable">IEntityItem:GetNoTargetIgnoreInvulnerable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetNoTurnToTarget">IEntityItem:GetNoTurnToTarget&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetRange">IEntityItem:GetRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetRangeBuffer">IEntityItem:GetRangeBuffer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetRechargeable">IEntityItem:GetRechargeable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetRemainingCooldownTime">IEntityItem:GetRemainingCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetRestockDelay">IEntityItem:GetRestockDelay&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetSlot">IEntityItem:GetSlot&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetTargetRadius">IEntityItem:GetTargetRadius&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetToggleOffCooldownTime">IEntityItem:GetToggleOffCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetToggleOffManaCost">IEntityItem:GetToggleOffManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetTotalCost">IEntityItem:GetTotalCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetTriggeredManaCost">IEntityItem:GetTriggeredManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetType">IEntityItem:GetType&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetTypeName">IEntityItem:GetTypeName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetUnkillable">IEntityItem:GetUnkillable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetUsePathForRange">IEntityItem:GetUsePathForRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:GetValue">IEntityItem:GetValue&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:IsActive">IEntityItem:IsActive&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:IsRecipe">IEntityItem:IsRecipe&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IEntityItem:IsValid">IEntityItem:IsValid&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "IEntityItem:CanActivate"></a>
+    <strong>IEntityItem:CanActivate&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:CanDrop"></a>
+    <strong>IEntityItem:CanDrop&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:CanUse"></a>
+    <strong>IEntityItem:CanUse&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetActiveManaCost"></a>
+    <strong>IEntityItem:GetActiveManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetActiveModifierKey"></a>
+    <strong>IEntityItem:GetActiveModifierKey&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowAutoCast"></a>
+    <strong>IEntityItem:GetAllowAutoCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowDisassemble"></a>
+    <strong>IEntityItem:GetAllowDisassemble&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowOutOfBoundsCast"></a>
+    <strong>IEntityItem:GetAllowOutOfBoundsCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowOutOfRangeCast"></a>
+    <strong>IEntityItem:GetAllowOutOfRangeCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowSharing"></a>
+    <strong>IEntityItem:GetAllowSharing&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAllowTransfer"></a>
+    <strong>IEntityItem:GetAllowTransfer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAreaCastRange"></a>
+    <strong>IEntityItem:GetAreaCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAutoAssemble"></a>
+    <strong>IEntityItem:GetAutoAssemble&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAutoRecharge"></a>
+    <strong>IEntityItem:GetAutoRecharge&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAutoToggleOffWhenDisabled"></a>
+    <strong>IEntityItem:GetAutoToggleOffWhenDisabled&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetAutoToggleOffWithTriggeredManaCost"></a>
+    <strong>IEntityItem:GetAutoToggleOffWithTriggeredManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetBindOnPickup"></a>
+    <strong>IEntityItem:GetBindOnPickup&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCastActionTime"></a>
+    <strong>IEntityItem:GetCastActionTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCastTime"></a>
+    <strong>IEntityItem:GetCastTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCategory"></a>
+    <strong>IEntityItem:GetCategory&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetChannelRange"></a>
+    <strong>IEntityItem:GetChannelRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetChannelTime"></a>
+    <strong>IEntityItem:GetChannelTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetChargeCost"></a>
+    <strong>IEntityItem:GetChargeCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCharges"></a>
+    <strong>IEntityItem:GetCharges&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetComponents"></a>
+    <strong>IEntityItem:GetComponents&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>itemdef</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetConeCastRange"></a>
+    <strong>IEntityItem:GetConeCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetConeCastWidth"></a>
+    <strong>IEntityItem:GetConeCastWidth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCooldownOnDamage"></a>
+    <strong>IEntityItem:GetCooldownOnDamage&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCooldownTime"></a>
+    <strong>IEntityItem:GetCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetCost"></a>
+    <strong>IEntityItem:GetCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDeferChannelCost"></a>
+    <strong>IEntityItem:GetDeferChannelCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDeferChannelImpact"></a>
+    <strong>IEntityItem:GetDeferChannelImpact&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDestroyOnEmpty"></a>
+    <strong>IEntityItem:GetDestroyOnEmpty&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDisabled"></a>
+    <strong>IEntityItem:GetDisabled&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDoubleActivate"></a>
+    <strong>IEntityItem:GetDoubleActivate&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetDropOnDeath"></a>
+    <strong>IEntityItem:GetDropOnDeath&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetForceRange"></a>
+    <strong>IEntityItem:GetForceRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetFrontQueue"></a>
+    <strong>IEntityItem:GetFrontQueue&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetIgnoreCooldown"></a>
+    <strong>IEntityItem:GetIgnoreCooldown&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetIgnoreInvulnerable"></a>
+    <strong>IEntityItem:GetIgnoreInvulnerable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetInitialCharges"></a>
+    <strong>IEntityItem:GetInitialCharges&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetInitialStock"></a>
+    <strong>IEntityItem:GetInitialStock&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetIsChanneling"></a>
+    <strong>IEntityItem:GetIsChanneling&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetItemDefinition"></a>
+    <strong>IEntityItem:GetItemDefinition&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>itemdef</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetLevel"></a>
+    <strong>IEntityItem:GetLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetLineCastMaxRange"></a>
+    <strong>IEntityItem:GetLineCastMaxRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetLineCastRange"></a>
+    <strong>IEntityItem:GetLineCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetLineCastWidth"></a>
+    <strong>IEntityItem:GetLineCastWidth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetManaCost"></a>
+    <strong>IEntityItem:GetManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetMaxCharges"></a>
+    <strong>IEntityItem:GetMaxCharges&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetMaxLevel"></a>
+    <strong>IEntityItem:GetMaxLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetMaxStock"></a>
+    <strong>IEntityItem:GetMaxStock&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetMinRange"></a>
+    <strong>IEntityItem:GetMinRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNeedVision"></a>
+    <strong>IEntityItem:GetNeedVision&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoDrop"></a>
+    <strong>IEntityItem:GetNoDrop&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNonInterrupting"></a>
+    <strong>IEntityItem:GetNonInterrupting&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoPurchase"></a>
+    <strong>IEntityItem:GetNoPurchase&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoRangeClamp"></a>
+    <strong>IEntityItem:GetNoRangeClamp&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoSell"></a>
+    <strong>IEntityItem:GetNoSell&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoStash"></a>
+    <strong>IEntityItem:GetNoStash&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoStun"></a>
+    <strong>IEntityItem:GetNoStun&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoTargetIgnoreInvulnerable"></a>
+    <strong>IEntityItem:GetNoTargetIgnoreInvulnerable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetNoTurnToTarget"></a>
+    <strong>IEntityItem:GetNoTurnToTarget&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetRange"></a>
+    <strong>IEntityItem:GetRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetRangeBuffer"></a>
+    <strong>IEntityItem:GetRangeBuffer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetRechargeable"></a>
+    <strong>IEntityItem:GetRechargeable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetRemainingCooldownTime"></a>
+    <strong>IEntityItem:GetRemainingCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetRestockDelay"></a>
+    <strong>IEntityItem:GetRestockDelay&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetSlot"></a>
+    <strong>IEntityItem:GetSlot&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetTargetRadius"></a>
+    <strong>IEntityItem:GetTargetRadius&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetToggleOffCooldownTime"></a>
+    <strong>IEntityItem:GetToggleOffCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetToggleOffManaCost"></a>
+    <strong>IEntityItem:GetToggleOffManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetTotalCost"></a>
+    <strong>IEntityItem:GetTotalCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetTriggeredManaCost"></a>
+    <strong>IEntityItem:GetTriggeredManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetType"></a>
+    <strong>IEntityItem:GetType&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetTypeName"></a>
+    <strong>IEntityItem:GetTypeName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetUnkillable"></a>
+    <strong>IEntityItem:GetUnkillable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetUsePathForRange"></a>
+    <strong>IEntityItem:GetUsePathForRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:GetValue"></a>
+    <strong>IEntityItem:GetValue&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:IsActive"></a>
+    <strong>IEntityItem:IsActive&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:IsRecipe"></a>
+    <strong>IEntityItem:IsRecipe&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IEntityItem:IsValid"></a>
+    <strong>IEntityItem:IsValid&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

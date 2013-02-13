@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><strong>CBotBrain</strong></li>
+  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
+  <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
+  <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
+  <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
+  <li><a href="../modules/HonLibrary.html">HonLibrary</a></li>
+  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><a href="../modules/IBehavior.html">IBehavior</a></li>
+  <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
+  <li><a href="../modules/IEntityItem.html">IEntityItem</a></li>
+  <li><a href="../modules/IUnitEntity.html">IUnitEntity</a></li>
+  <li><a href="../modules/Vector3.html">Vector3</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>CBotBrain</code></h1>
+
+<p>BotBrain members</p>
+<p></p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:CanSeeUnit">CBotBrain:CanSeeUnit&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:CanSelectHero">CBotBrain:CanSelectHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:Chat">CBotBrain:Chat&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:ChatTeam">CBotBrain:ChatTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetGold">CBotBrain:GetGold&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetGoldEarned">CBotBrain:GetGoldEarned&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetGPM">CBotBrain:GetGPM&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetHeroUnit">CBotBrain:GetHeroUnit&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetName">CBotBrain:GetName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetPotentialHero">CBotBrain:GetPotentialHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:GetTeam">CBotBrain:GetTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:HasSelectedHero">CBotBrain:HasSelectedHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:IsHeroLocked">CBotBrain:IsHeroLocked&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:Order">CBotBrain:Order&nbsp;(Unit, String, String)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbility">CBotBrain:OrderAbility&nbsp;(Ability, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbility2">CBotBrain:OrderAbility2&nbsp;(Ability, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityEntity">CBotBrain:OrderAbilityEntity&nbsp;(Ability, Unit, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityPosition">CBotBrain:OrderAbilityPosition&nbsp;(Ability, Vector3, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityVector">CBotBrain:OrderAbilityVector&nbsp;(Ability, Vector3, Vector3, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderEntity">CBotBrain:OrderEntity&nbsp;(Unit, String, [, String, Item, bool)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItem">CBotBrain:OrderItem&nbsp;(Item, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItem2">CBotBrain:OrderItem2&nbsp;(Item, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItemEntity">CBotBrain:OrderItemEntity&nbsp;(Item, Unit, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItemPosition">CBotBrain:OrderItemPosition&nbsp;(Item, Vector3, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItemVector">CBotBrain:OrderItemVector&nbsp;(Item, Vector3, Vector3, [)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:OrderPosition">CBotBrain:OrderPosition&nbsp;(Unit, String, Vector3, [, Item, bool)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:Ready">CBotBrain:Ready&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:SelectHero">CBotBrain:SelectHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:SelectPotentialHero">CBotBrain:SelectPotentialHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:SendBotMessage">CBotBrain:SendBotMessage&nbsp;(bAllChat, sMessageKey, tMessageTokens)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CBotBrain:ShareControl">CBotBrain:ShareControl&nbsp;(player, bShare, bFullControl)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "CBotBrain:CanSeeUnit"></a>
+    <strong>CBotBrain:CanSeeUnit&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:CanSelectHero"></a>
+    <strong>CBotBrain:CanSelectHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:Chat"></a>
+    <strong>CBotBrain:Chat&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:ChatTeam"></a>
+    <strong>CBotBrain:ChatTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetGold"></a>
+    <strong>CBotBrain:GetGold&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> CBotBrain
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetGoldEarned"></a>
+    <strong>CBotBrain:GetGoldEarned&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetGPM"></a>
+    <strong>CBotBrain:GetGPM&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetHeroUnit"></a>
+    <strong>CBotBrain:GetHeroUnit&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>unit</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetName"></a>
+    <strong>CBotBrain:GetName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetPotentialHero"></a>
+    <strong>CBotBrain:GetPotentialHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:GetTeam"></a>
+    <strong>CBotBrain:GetTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:HasSelectedHero"></a>
+    <strong>CBotBrain:HasSelectedHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:IsHeroLocked"></a>
+    <strong>CBotBrain:IsHeroLocked&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:Order"></a>
+    <strong>CBotBrain:Order&nbsp;(Unit, String, String)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Unit</em></code>: </li>
+       <li><code><em>String</em></code>: </li>
+       <li><code><em>String</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderAbility"></a>
+    <strong>CBotBrain:OrderAbility&nbsp;(Ability, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Ability</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderAbility2"></a>
+    <strong>CBotBrain:OrderAbility2&nbsp;(Ability, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Ability</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderAbilityEntity"></a>
+    <strong>CBotBrain:OrderAbilityEntity&nbsp;(Ability, Unit, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Ability</em></code>: </li>
+       <li><code><em>Unit</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderAbilityPosition"></a>
+    <strong>CBotBrain:OrderAbilityPosition&nbsp;(Ability, Vector3, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Ability</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderAbilityVector"></a>
+    <strong>CBotBrain:OrderAbilityVector&nbsp;(Ability, Vector3, Vector3, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Ability</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderEntity"></a>
+    <strong>CBotBrain:OrderEntity&nbsp;(Unit, String, [, String, Item, bool)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Unit</em></code>: </li>
+       <li><code><em>String</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+       <li><code><em>String</em></code>: </li>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>bool</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderItem"></a>
+    <strong>CBotBrain:OrderItem&nbsp;(Item, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderItem2"></a>
+    <strong>CBotBrain:OrderItem2&nbsp;(Item, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderItemEntity"></a>
+    <strong>CBotBrain:OrderItemEntity&nbsp;(Item, Unit, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>Unit</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderItemPosition"></a>
+    <strong>CBotBrain:OrderItemPosition&nbsp;(Item, Vector3, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderItemVector"></a>
+    <strong>CBotBrain:OrderItemVector&nbsp;(Item, Vector3, Vector3, [)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:OrderPosition"></a>
+    <strong>CBotBrain:OrderPosition&nbsp;(Unit, String, Vector3, [, Item, bool)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>Unit</em></code>: </li>
+       <li><code><em>String</em></code>: </li>
+       <li><code><em>Vector3</em></code>: </li>
+       <li><code><em>[</em></code>: </li>
+       <li><code><em>Item</em></code>: </li>
+       <li><code><em>bool</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:Ready"></a>
+    <strong>CBotBrain:Ready&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:SelectHero"></a>
+    <strong>CBotBrain:SelectHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:SelectPotentialHero"></a>
+    <strong>CBotBrain:SelectPotentialHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:SendBotMessage"></a>
+    <strong>CBotBrain:SendBotMessage&nbsp;(bAllChat, sMessageKey, tMessageTokens)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>bAllChat</em></code>: </li>
+       <li><code><em>sMessageKey</em></code>: </li>
+       <li><code><em>tMessageTokens</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CBotBrain:ShareControl"></a>
+    <strong>CBotBrain:ShareControl&nbsp;(player, bShare, bFullControl)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>player</em></code>: </li>
+       <li><code><em>bShare</em></code>: </li>
+       <li><code><em>bFullControl</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
