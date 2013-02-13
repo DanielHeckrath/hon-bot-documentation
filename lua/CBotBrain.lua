@@ -75,12 +75,22 @@ function CBotBrain:OrderAbilityEntity(Ability ability, Unit target, [bool queueC
 function CBotBrain:OrderAbilityPosition(Ability ability, Vector3 pos, [bool queueCommand = false])
 
 --- Function
+-- @tparam Ability ability the ability
+-- @tparam Vector3 startPos the start position
+-- @tparam Vector3 endPos the end position
+-- @tparam[opt] bool queueCommand add the order to the command queue
 -- @treturn void
-function CBotBrain:OrderAbilityVector(Ability ability, Vector3 startPos, Vector3 endPos, [bool queueCommand = false])
+function CBotBrain:OrderAbilityVector(ability,startPos,endPos,queueCommand)
 
 --- Function
+-- @tparam Unit unit the unit
+-- @tparam String order the order
+-- @tparam[opt] Unit target the target
+-- @tparam[opt] String queue the queue
+-- @tparam[opt] Item item the item
+-- @tparam[opt] bool useDirectPathing use direct pasing
 -- @treturn void
-function CBotBrain:OrderEntity(Unit unit, String order, [Unit target = NULL, String queue = "none", Item item = NULL, bool useDirectPathing = false])
+function CBotBrain:OrderEntity(unit,order,target,queue,item,useDirectPathing)
 
 --- Function
 -- @treturn void
