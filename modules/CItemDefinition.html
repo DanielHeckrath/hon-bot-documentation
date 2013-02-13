@@ -1,0 +1,1507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
+  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
+  <li><strong>CItemDefinition</strong></li>
+  <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
+  <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
+  <li><a href="../modules/HonLibrary.html">HonLibrary</a></li>
+  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><a href="../modules/IBehavior.html">IBehavior</a></li>
+  <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
+  <li><a href="../modules/IEntityItem.html">IEntityItem</a></li>
+  <li><a href="../modules/IUnitEntity.html">IUnitEntity</a></li>
+  <li><a href="../modules/Vector3.html">Vector3</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>CItemDefinition</code></h1>
+
+<p>ItemDefinition members</p>
+<p></p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetActiveManaCost">CItemDefinition:GetActiveManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowAutoCast">CItemDefinition:GetAllowAutoCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowDisassemble">CItemDefinition:GetAllowDisassemble&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowOutOfBoundsCast">CItemDefinition:GetAllowOutOfBoundsCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowOutOfRangeCast">CItemDefinition:GetAllowOutOfRangeCast&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowSharing">CItemDefinition:GetAllowSharing&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAllowTransfer">CItemDefinition:GetAllowTransfer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAreaCastRange">CItemDefinition:GetAreaCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAutoAssemble">CItemDefinition:GetAutoAssemble&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAutoRecharge">CItemDefinition:GetAutoRecharge&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAutoToggleOffWhenDisabled">CItemDefinition:GetAutoToggleOffWhenDisabled&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetAutoToggleOffWithTriggeredManaCost">CItemDefinition:GetAutoToggleOffWithTriggeredManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetBindOnPickup">CItemDefinition:GetBindOnPickup&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetCastActionTime">CItemDefinition:GetCastActionTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetCastTime">CItemDefinition:GetCastTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetChannelRange">CItemDefinition:GetChannelRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetChannelTime">CItemDefinition:GetChannelTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetChargeCost">CItemDefinition:GetChargeCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetComponents">CItemDefinition:GetComponents&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetConeCastRange">CItemDefinition:GetConeCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetConeCastWidth">CItemDefinition:GetConeCastWidth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetCooldownOnDamage">CItemDefinition:GetCooldownOnDamage&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetCooldownTime">CItemDefinition:GetCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetCost">CItemDefinition:GetCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDeferChannelCost">CItemDefinition:GetDeferChannelCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDeferChannelImpact">CItemDefinition:GetDeferChannelImpact&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDestroyOnEmpty">CItemDefinition:GetDestroyOnEmpty&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDisabled">CItemDefinition:GetDisabled&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDisplayName">CItemDefinition:GetDisplayName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDoubleActivate">CItemDefinition:GetDoubleActivate&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetDropOnDeath">CItemDefinition:GetDropOnDeath&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetForceRange">CItemDefinition:GetForceRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetFrontQueue">CItemDefinition:GetFrontQueue&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetIgnoreCooldown">CItemDefinition:GetIgnoreCooldown&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetIgnoreInvulnerable">CItemDefinition:GetIgnoreInvulnerable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetInitialCharges">CItemDefinition:GetInitialCharges&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetInitialStock">CItemDefinition:GetInitialStock&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetIsChanneling">CItemDefinition:GetIsChanneling&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetLineCastMaxRange">CItemDefinition:GetLineCastMaxRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetLineCastRange">CItemDefinition:GetLineCastRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetLineCastWidth">CItemDefinition:GetLineCastWidth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetManaCost">CItemDefinition:GetManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetMaxLevel">CItemDefinition:GetMaxLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetMaxOwned">CItemDefinition:GetMaxOwned&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetMaxStock">CItemDefinition:GetMaxStock&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetMinRange">CItemDefinition:GetMinRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetName">CItemDefinition:GetName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNeedVision">CItemDefinition:GetNeedVision&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNew">CItemDefinition:GetNew&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoDrop">CItemDefinition:GetNoDrop&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNonInterrupting">CItemDefinition:GetNonInterrupting&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoPurchase">CItemDefinition:GetNoPurchase&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoRangeClamp">CItemDefinition:GetNoRangeClamp&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoSell">CItemDefinition:GetNoSell&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoStash">CItemDefinition:GetNoStash&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoStun">CItemDefinition:GetNoStun&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoTargetIgnoreInvulnerable">CItemDefinition:GetNoTargetIgnoreInvulnerable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetNoTurnToTarget">CItemDefinition:GetNoTurnToTarget&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetRange">CItemDefinition:GetRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetRangeBuffer">CItemDefinition:GetRangeBuffer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetRechargeable">CItemDefinition:GetRechargeable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetRestockDelay">CItemDefinition:GetRestockDelay&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetTargetRadius">CItemDefinition:GetTargetRadius&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetToggleOffCooldownTime">CItemDefinition:GetToggleOffCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetToggleOffManaCost">CItemDefinition:GetToggleOffManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetTotalCost">CItemDefinition:GetTotalCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetTriggeredManaCost">CItemDefinition:GetTriggeredManaCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetTypeID">CItemDefinition:GetTypeID&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetUnkillable">CItemDefinition:GetUnkillable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:GetUsePathForRange">CItemDefinition:GetUsePathForRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CItemDefinition:IsValid">CItemDefinition:IsValid&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "CItemDefinition:GetActiveManaCost"></a>
+    <strong>CItemDefinition:GetActiveManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowAutoCast"></a>
+    <strong>CItemDefinition:GetAllowAutoCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowDisassemble"></a>
+    <strong>CItemDefinition:GetAllowDisassemble&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowOutOfBoundsCast"></a>
+    <strong>CItemDefinition:GetAllowOutOfBoundsCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowOutOfRangeCast"></a>
+    <strong>CItemDefinition:GetAllowOutOfRangeCast&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowSharing"></a>
+    <strong>CItemDefinition:GetAllowSharing&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAllowTransfer"></a>
+    <strong>CItemDefinition:GetAllowTransfer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAreaCastRange"></a>
+    <strong>CItemDefinition:GetAreaCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAutoAssemble"></a>
+    <strong>CItemDefinition:GetAutoAssemble&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAutoRecharge"></a>
+    <strong>CItemDefinition:GetAutoRecharge&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAutoToggleOffWhenDisabled"></a>
+    <strong>CItemDefinition:GetAutoToggleOffWhenDisabled&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetAutoToggleOffWithTriggeredManaCost"></a>
+    <strong>CItemDefinition:GetAutoToggleOffWithTriggeredManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetBindOnPickup"></a>
+    <strong>CItemDefinition:GetBindOnPickup&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetCastActionTime"></a>
+    <strong>CItemDefinition:GetCastActionTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetCastTime"></a>
+    <strong>CItemDefinition:GetCastTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetChannelRange"></a>
+    <strong>CItemDefinition:GetChannelRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetChannelTime"></a>
+    <strong>CItemDefinition:GetChannelTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetChargeCost"></a>
+    <strong>CItemDefinition:GetChargeCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetComponents"></a>
+    <strong>CItemDefinition:GetComponents&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>tab</strong> {<strong>itemdef</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetConeCastRange"></a>
+    <strong>CItemDefinition:GetConeCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetConeCastWidth"></a>
+    <strong>CItemDefinition:GetConeCastWidth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetCooldownOnDamage"></a>
+    <strong>CItemDefinition:GetCooldownOnDamage&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetCooldownTime"></a>
+    <strong>CItemDefinition:GetCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetCost"></a>
+    <strong>CItemDefinition:GetCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDeferChannelCost"></a>
+    <strong>CItemDefinition:GetDeferChannelCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDeferChannelImpact"></a>
+    <strong>CItemDefinition:GetDeferChannelImpact&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDestroyOnEmpty"></a>
+    <strong>CItemDefinition:GetDestroyOnEmpty&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDisabled"></a>
+    <strong>CItemDefinition:GetDisabled&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDisplayName"></a>
+    <strong>CItemDefinition:GetDisplayName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDoubleActivate"></a>
+    <strong>CItemDefinition:GetDoubleActivate&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetDropOnDeath"></a>
+    <strong>CItemDefinition:GetDropOnDeath&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetForceRange"></a>
+    <strong>CItemDefinition:GetForceRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetFrontQueue"></a>
+    <strong>CItemDefinition:GetFrontQueue&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetIgnoreCooldown"></a>
+    <strong>CItemDefinition:GetIgnoreCooldown&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetIgnoreInvulnerable"></a>
+    <strong>CItemDefinition:GetIgnoreInvulnerable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetInitialCharges"></a>
+    <strong>CItemDefinition:GetInitialCharges&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetInitialStock"></a>
+    <strong>CItemDefinition:GetInitialStock&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetIsChanneling"></a>
+    <strong>CItemDefinition:GetIsChanneling&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetLineCastMaxRange"></a>
+    <strong>CItemDefinition:GetLineCastMaxRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetLineCastRange"></a>
+    <strong>CItemDefinition:GetLineCastRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetLineCastWidth"></a>
+    <strong>CItemDefinition:GetLineCastWidth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetManaCost"></a>
+    <strong>CItemDefinition:GetManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetMaxLevel"></a>
+    <strong>CItemDefinition:GetMaxLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetMaxOwned"></a>
+    <strong>CItemDefinition:GetMaxOwned&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetMaxStock"></a>
+    <strong>CItemDefinition:GetMaxStock&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetMinRange"></a>
+    <strong>CItemDefinition:GetMinRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetName"></a>
+    <strong>CItemDefinition:GetName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNeedVision"></a>
+    <strong>CItemDefinition:GetNeedVision&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNew"></a>
+    <strong>CItemDefinition:GetNew&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoDrop"></a>
+    <strong>CItemDefinition:GetNoDrop&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNonInterrupting"></a>
+    <strong>CItemDefinition:GetNonInterrupting&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoPurchase"></a>
+    <strong>CItemDefinition:GetNoPurchase&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoRangeClamp"></a>
+    <strong>CItemDefinition:GetNoRangeClamp&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoSell"></a>
+    <strong>CItemDefinition:GetNoSell&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoStash"></a>
+    <strong>CItemDefinition:GetNoStash&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoStun"></a>
+    <strong>CItemDefinition:GetNoStun&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoTargetIgnoreInvulnerable"></a>
+    <strong>CItemDefinition:GetNoTargetIgnoreInvulnerable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetNoTurnToTarget"></a>
+    <strong>CItemDefinition:GetNoTurnToTarget&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetRange"></a>
+    <strong>CItemDefinition:GetRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetRangeBuffer"></a>
+    <strong>CItemDefinition:GetRangeBuffer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetRechargeable"></a>
+    <strong>CItemDefinition:GetRechargeable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetRestockDelay"></a>
+    <strong>CItemDefinition:GetRestockDelay&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetTargetRadius"></a>
+    <strong>CItemDefinition:GetTargetRadius&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetToggleOffCooldownTime"></a>
+    <strong>CItemDefinition:GetToggleOffCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetToggleOffManaCost"></a>
+    <strong>CItemDefinition:GetToggleOffManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetTotalCost"></a>
+    <strong>CItemDefinition:GetTotalCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetTriggeredManaCost"></a>
+    <strong>CItemDefinition:GetTriggeredManaCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetTypeID"></a>
+    <strong>CItemDefinition:GetTypeID&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetUnkillable"></a>
+    <strong>CItemDefinition:GetUnkillable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:GetUsePathForRange"></a>
+    <strong>CItemDefinition:GetUsePathForRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "CItemDefinition:IsValid"></a>
+    <strong>CItemDefinition:IsValid&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

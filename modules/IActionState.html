@@ -41,12 +41,12 @@
   <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
   <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
-  <li><strong>CBotMetaDataNode</strong></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
   <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
   <li><a href="../modules/HonLibrary.html">HonLibrary</a></li>
-  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><strong>IActionState</strong></li>
   <li><a href="../modules/IBehavior.html">IBehavior</a></li>
   <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
   <li><a href="../modules/IEntityItem.html">IEntityItem</a></li>
@@ -58,24 +58,36 @@
 
 <div id="content">
 
-<h1>Module <code>CBotMetaDataNode</code></h1>
+<h1>Module <code>IActionState</code></h1>
 
-<p>Module containing functions to deal with MetaDataNodes</p>
+<p>IActionState members</p>
 <p></p>
 
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetName">CBotMetaDataNode:GetName&nbsp;()</a></td>
-	<td class="summary">Function to get the nodes name</td>
+	<td class="name" nowrap><a href="#IActionState:IsActive">IActionState:IsActive&nbsp;()</a></td>
+	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetPosition">CBotMetaDataNode:GetPosition&nbsp;()</a></td>
-	<td class="summary">Function to get the nodes position</td>
+	<td class="name" nowrap><a href="#IActionState:IsAllDone">IActionState:IsAllDone&nbsp;()</a></td>
+	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotMetaDataNode:GetProperty">CBotMetaDataNode:GetProperty&nbsp;(sName)</a></td>
-	<td class="summary">Function to get a property from the node</td>
+	<td class="name" nowrap><a href="#IActionState:IsAttackReady">IActionState:IsAttackReady&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IActionState:IsCommitted">IActionState:IsCommitted&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IActionState:IsCompleted">IActionState:IsCompleted&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IActionState:IsInterrupted">IActionState:IsInterrupted&nbsp;()</a></td>
+	<td class="summary">Function</td>
 	</tr>
 </table>
 
@@ -87,53 +99,97 @@
     
     <dl class="function">
     <dt>
-    <a name = "CBotMetaDataNode:GetName"></a>
-    <strong>CBotMetaDataNode:GetName&nbsp;()</strong>
+    <a name = "IActionState:IsActive"></a>
+    <strong>IActionState:IsActive&nbsp;()</strong>
     </dt>
     <dd>
-    Function to get the nodes name 
+    Function 
 
 
 
     <h3>Returns:</h3>
     <ol>
-        String the nodes name
+        <strong>Boolean</strong> 
     </ol>
 
 
 </dd>
     <dt>
-    <a name = "CBotMetaDataNode:GetPosition"></a>
-    <strong>CBotMetaDataNode:GetPosition&nbsp;()</strong>
+    <a name = "IActionState:IsAllDone"></a>
+    <strong>IActionState:IsAllDone&nbsp;()</strong>
     </dt>
     <dd>
-    Function to get the nodes position 
+    Function 
 
 
 
     <h3>Returns:</h3>
     <ol>
-        Vector3 the nodes position
+        <strong>Boolean</strong> 
     </ol>
 
 
 </dd>
     <dt>
-    <a name = "CBotMetaDataNode:GetProperty"></a>
-    <strong>CBotMetaDataNode:GetProperty&nbsp;(sName)</strong>
+    <a name = "IActionState:IsAttackReady"></a>
+    <strong>IActionState:IsAttackReady&nbsp;()</strong>
     </dt>
     <dd>
-    Function to get a property from the node 
+    Function 
 
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>sName</em></code>:  name of the property</li>
-    </ul>
 
 
     <h3>Returns:</h3>
     <ol>
-        String/Number/Boolean value of the property
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IActionState:IsCommitted"></a>
+    <strong>IActionState:IsCommitted&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IActionState:IsCompleted"></a>
+    <strong>IActionState:IsCompleted&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IActionState:IsInterrupted"></a>
+    <strong>IActionState:IsInterrupted&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
     </ol>
 
 

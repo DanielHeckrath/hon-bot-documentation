@@ -1,0 +1,1852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
+  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
+  <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
+  <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
+  <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
+  <li><a href="../modules/HonLibrary.html">HonLibrary</a></li>
+  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><a href="../modules/IBehavior.html">IBehavior</a></li>
+  <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
+  <li><a href="../modules/IEntityItem.html">IEntityItem</a></li>
+  <li><strong>IUnitEntity</strong></li>
+  <li><a href="../modules/Vector3.html">Vector3</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>IUnitEntity</code></h1>
+
+<p>IUnitEntity members</p>
+<p></p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:CanAccess">IUnitEntity:CanAccess&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:FindItemInInventory">IUnitEntity:FindItemInInventory&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAbility">IUnitEntity:GetAbility&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAbilityPointsAvailable">IUnitEntity:GetAbilityPointsAvailable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetActionState">IUnitEntity:GetActionState&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAdjustedAttackActionTime">IUnitEntity:GetAdjustedAttackActionTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAdjustedAttackCooldown">IUnitEntity:GetAdjustedAttackCooldown&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAdjustedAttackDuration">IUnitEntity:GetAdjustedAttackDuration&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetArmor">IUnitEntity:GetArmor&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackDamageMax">IUnitEntity:GetAttackDamageMax&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackDamageMin">IUnitEntity:GetAttackDamageMin&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackProjectileSpeed">IUnitEntity:GetAttackProjectileSpeed&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackRange">IUnitEntity:GetAttackRange&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackSpeed">IUnitEntity:GetAttackSpeed&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackTarget">IUnitEntity:GetAttackTarget&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAttackType">IUnitEntity:GetAttackType&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetBaseDamage">IUnitEntity:GetBaseDamage&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetBehavior">IUnitEntity:GetBehavior&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetBoundsRadius">IUnitEntity:GetBoundsRadius&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetBuyBackCost">IUnitEntity:GetBuyBackCost&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetCanAttack">IUnitEntity:GetCanAttack&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetCliffwalking">IUnitEntity:GetCliffwalking&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetDisplayName">IUnitEntity:GetDisplayName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetEvasionMelee">IUnitEntity:GetEvasionMelee&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetEvasionRanged">IUnitEntity:GetEvasionRanged&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetExperienceForCurrentLevel">IUnitEntity:GetExperienceForCurrentLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetExperienceForNextLevel">IUnitEntity:GetExperienceForNextLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetFinalAttackDamageMax">IUnitEntity:GetFinalAttackDamageMax&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetFinalAttackDamageMin">IUnitEntity:GetFinalAttackDamageMin&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetHealth">IUnitEntity:GetHealth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetHealthPercent">IUnitEntity:GetHealthPercent&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetHealthRegen">IUnitEntity:GetHealthRegen&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetInventory">IUnitEntity:GetInventory&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItem">IUnitEntity:GetItem&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItemComponentsRemaining">IUnitEntity:GetItemComponentsRemaining&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItemCostRemaining">IUnitEntity:GetItemCostRemaining&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetLevel">IUnitEntity:GetLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetLifeSteal">IUnitEntity:GetLifeSteal&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMagicArmor">IUnitEntity:GetMagicArmor&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMagicResistance">IUnitEntity:GetMagicResistance&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMana">IUnitEntity:GetMana&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetManaPercent">IUnitEntity:GetManaPercent&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetManaRegen">IUnitEntity:GetManaRegen&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMaxHealth">IUnitEntity:GetMaxHealth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMaxMana">IUnitEntity:GetMaxMana&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetMoveSpeed">IUnitEntity:GetMoveSpeed&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetNumBuyBacks">IUnitEntity:GetNumBuyBacks&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetOwnerPlayer">IUnitEntity:GetOwnerPlayer&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetPhysicalResistance">IUnitEntity:GetPhysicalResistance&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetPosition">IUnitEntity:GetPosition&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetPrimaryAttribute">IUnitEntity:GetPrimaryAttribute&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetRemainingCooldownTime">IUnitEntity:GetRemainingCooldownTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetRemainingRespawnTime">IUnitEntity:GetRemainingRespawnTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetStashAccess">IUnitEntity:GetStashAccess&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetStats">IUnitEntity:GetStats&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetTeam">IUnitEntity:GetTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetTreewalking">IUnitEntity:GetTreewalking&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetTypeName">IUnitEntity:GetTypeName&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetUniqueID">IUnitEntity:GetUniqueID&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetUnitwalking">IUnitEntity:GetUnitwalking&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:GetXPM">IUnitEntity:GetXPM&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:HasDeniablePotential">IUnitEntity:HasDeniablePotential&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:HasState">IUnitEntity:HasState&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsAlive">IUnitEntity:IsAlive&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsAttackReady">IUnitEntity:IsAttackReady&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsBase">IUnitEntity:IsBase&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsBotControlled">IUnitEntity:IsBotControlled&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsBuilding">IUnitEntity:IsBuilding&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsChanneling">IUnitEntity:IsChanneling&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsDeniable">IUnitEntity:IsDeniable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsDisarmed">IUnitEntity:IsDisarmed&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsHero">IUnitEntity:IsHero&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsImmobilized">IUnitEntity:IsImmobilized&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsInvulnerable">IUnitEntity:IsInvulnerable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsPerplexed">IUnitEntity:IsPerplexed&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsRax">IUnitEntity:IsRax&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsShop">IUnitEntity:IsShop&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsSilenced">IUnitEntity:IsSilenced&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsStealth">IUnitEntity:IsStealth&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsStunned">IUnitEntity:IsStunned&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsTower">IUnitEntity:IsTower&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsUnitType">IUnitEntity:IsUnitType&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:IsValid">IUnitEntity:IsValid&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:PurchaseRemaining">IUnitEntity:PurchaseRemaining&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:Sell">IUnitEntity:Sell&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:SellBySlot">IUnitEntity:SellBySlot&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:SwapItems">IUnitEntity:SwapItems&nbsp;(nSlot1, nSlot2)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IUnitEntity:TeamShare">IUnitEntity:TeamShare&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "IUnitEntity:CanAccess"></a>
+    <strong>IUnitEntity:CanAccess&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:FindItemInInventory"></a>
+    <strong>IUnitEntity:FindItemInInventory&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>item</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAbility"></a>
+    <strong>IUnitEntity:GetAbility&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>ability</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAbilityPointsAvailable"></a>
+    <strong>IUnitEntity:GetAbilityPointsAvailable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetActionState"></a>
+    <strong>IUnitEntity:GetActionState&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAdjustedAttackActionTime"></a>
+    <strong>IUnitEntity:GetAdjustedAttackActionTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAdjustedAttackCooldown"></a>
+    <strong>IUnitEntity:GetAdjustedAttackCooldown&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAdjustedAttackDuration"></a>
+    <strong>IUnitEntity:GetAdjustedAttackDuration&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetArmor"></a>
+    <strong>IUnitEntity:GetArmor&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackDamageMax"></a>
+    <strong>IUnitEntity:GetAttackDamageMax&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackDamageMin"></a>
+    <strong>IUnitEntity:GetAttackDamageMin&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackProjectileSpeed"></a>
+    <strong>IUnitEntity:GetAttackProjectileSpeed&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackRange"></a>
+    <strong>IUnitEntity:GetAttackRange&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackSpeed"></a>
+    <strong>IUnitEntity:GetAttackSpeed&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackTarget"></a>
+    <strong>IUnitEntity:GetAttackTarget&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetAttackType"></a>
+    <strong>IUnitEntity:GetAttackType&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetBaseDamage"></a>
+    <strong>IUnitEntity:GetBaseDamage&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetBehavior"></a>
+    <strong>IUnitEntity:GetBehavior&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Behavior</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetBoundsRadius"></a>
+    <strong>IUnitEntity:GetBoundsRadius&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetBuyBackCost"></a>
+    <strong>IUnitEntity:GetBuyBackCost&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetCanAttack"></a>
+    <strong>IUnitEntity:GetCanAttack&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetCliffwalking"></a>
+    <strong>IUnitEntity:GetCliffwalking&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetDisplayName"></a>
+    <strong>IUnitEntity:GetDisplayName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>sName</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetEvasionMelee"></a>
+    <strong>IUnitEntity:GetEvasionMelee&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetEvasionRanged"></a>
+    <strong>IUnitEntity:GetEvasionRanged&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetExperienceForCurrentLevel"></a>
+    <strong>IUnitEntity:GetExperienceForCurrentLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetExperienceForNextLevel"></a>
+    <strong>IUnitEntity:GetExperienceForNextLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetFinalAttackDamageMax"></a>
+    <strong>IUnitEntity:GetFinalAttackDamageMax&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetFinalAttackDamageMin"></a>
+    <strong>IUnitEntity:GetFinalAttackDamageMin&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetHealth"></a>
+    <strong>IUnitEntity:GetHealth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetHealthPercent"></a>
+    <strong>IUnitEntity:GetHealthPercent&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetHealthRegen"></a>
+    <strong>IUnitEntity:GetHealthRegen&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetInventory"></a>
+    <strong>IUnitEntity:GetInventory&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>Item</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetItem"></a>
+    <strong>IUnitEntity:GetItem&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>item</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetItemComponentsRemaining"></a>
+    <strong>IUnitEntity:GetItemComponentsRemaining&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>itemdef</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetItemCostRemaining"></a>
+    <strong>IUnitEntity:GetItemCostRemaining&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetLevel"></a>
+    <strong>IUnitEntity:GetLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetLifeSteal"></a>
+    <strong>IUnitEntity:GetLifeSteal&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMagicArmor"></a>
+    <strong>IUnitEntity:GetMagicArmor&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMagicResistance"></a>
+    <strong>IUnitEntity:GetMagicResistance&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMana"></a>
+    <strong>IUnitEntity:GetMana&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetManaPercent"></a>
+    <strong>IUnitEntity:GetManaPercent&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetManaRegen"></a>
+    <strong>IUnitEntity:GetManaRegen&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMaxHealth"></a>
+    <strong>IUnitEntity:GetMaxHealth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMaxMana"></a>
+    <strong>IUnitEntity:GetMaxMana&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetMoveSpeed"></a>
+    <strong>IUnitEntity:GetMoveSpeed&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetNumBuyBacks"></a>
+    <strong>IUnitEntity:GetNumBuyBacks&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetOwnerPlayer"></a>
+    <strong>IUnitEntity:GetOwnerPlayer&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>player</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetPhysicalResistance"></a>
+    <strong>IUnitEntity:GetPhysicalResistance&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetPosition"></a>
+    <strong>IUnitEntity:GetPosition&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <a href="../modules/Vector3.html#">Vector3</a> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetPrimaryAttribute"></a>
+    <strong>IUnitEntity:GetPrimaryAttribute&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetRemainingCooldownTime"></a>
+    <strong>IUnitEntity:GetRemainingCooldownTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetRemainingRespawnTime"></a>
+    <strong>IUnitEntity:GetRemainingRespawnTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetStashAccess"></a>
+    <strong>IUnitEntity:GetStashAccess&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetStats"></a>
+    <strong>IUnitEntity:GetStats&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>Number</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetTeam"></a>
+    <strong>IUnitEntity:GetTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetTreewalking"></a>
+    <strong>IUnitEntity:GetTreewalking&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetTypeName"></a>
+    <strong>IUnitEntity:GetTypeName&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>String</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetUniqueID"></a>
+    <strong>IUnitEntity:GetUniqueID&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetUnitwalking"></a>
+    <strong>IUnitEntity:GetUnitwalking&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:GetXPM"></a>
+    <strong>IUnitEntity:GetXPM&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:HasDeniablePotential"></a>
+    <strong>IUnitEntity:HasDeniablePotential&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:HasState"></a>
+    <strong>IUnitEntity:HasState&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsAlive"></a>
+    <strong>IUnitEntity:IsAlive&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsAttackReady"></a>
+    <strong>IUnitEntity:IsAttackReady&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsBase"></a>
+    <strong>IUnitEntity:IsBase&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsBotControlled"></a>
+    <strong>IUnitEntity:IsBotControlled&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsBuilding"></a>
+    <strong>IUnitEntity:IsBuilding&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsChanneling"></a>
+    <strong>IUnitEntity:IsChanneling&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsDeniable"></a>
+    <strong>IUnitEntity:IsDeniable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsDisarmed"></a>
+    <strong>IUnitEntity:IsDisarmed&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsHero"></a>
+    <strong>IUnitEntity:IsHero&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsImmobilized"></a>
+    <strong>IUnitEntity:IsImmobilized&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsInvulnerable"></a>
+    <strong>IUnitEntity:IsInvulnerable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsPerplexed"></a>
+    <strong>IUnitEntity:IsPerplexed&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsRax"></a>
+    <strong>IUnitEntity:IsRax&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsShop"></a>
+    <strong>IUnitEntity:IsShop&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsSilenced"></a>
+    <strong>IUnitEntity:IsSilenced&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsStealth"></a>
+    <strong>IUnitEntity:IsStealth&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsStunned"></a>
+    <strong>IUnitEntity:IsStunned&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsTower"></a>
+    <strong>IUnitEntity:IsTower&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsUnitType"></a>
+    <strong>IUnitEntity:IsUnitType&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:IsValid"></a>
+    <strong>IUnitEntity:IsValid&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:PurchaseRemaining"></a>
+    <strong>IUnitEntity:PurchaseRemaining&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:Sell"></a>
+    <strong>IUnitEntity:Sell&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:SellBySlot"></a>
+    <strong>IUnitEntity:SellBySlot&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:SwapItems"></a>
+    <strong>IUnitEntity:SwapItems&nbsp;(nSlot1, nSlot2)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>nSlot1</em></code>: </li>
+       <li><code><em>nSlot2</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "IUnitEntity:TeamShare"></a>
+    <strong>IUnitEntity:TeamShare&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

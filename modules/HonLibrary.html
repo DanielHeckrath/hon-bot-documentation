@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
+  <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
+  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
+  <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
+  <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
+  <li><a href="../modules/GlobalFunctions.html">GlobalFunctions</a></li>
+  <li><strong>HonLibrary</strong></li>
+  <li><a href="../modules/IActionState.html">IActionState</a></li>
+  <li><a href="../modules/IBehavior.html">IBehavior</a></li>
+  <li><a href="../modules/IEntityAbility.html">IEntityAbility</a></li>
+  <li><a href="../modules/IEntityItem.html">IEntityItem</a></li>
+  <li><a href="../modules/IUnitEntity.html">IUnitEntity</a></li>
+  <li><a href="../modules/Vector3.html">Vector3</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>HonLibrary</code></h1>
+
+<p>Hon library</p>
+<p></p>
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#HoN.CanSeePosition">HoN.CanSeePosition&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.DrawDebugLine">HoN.DrawDebugLine&nbsp;(vecStart, vecEnd, bArrow, sColor)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GameEntityExists">HoN.GameEntityExists&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetCreepWaveSpawnInterval">HoN.GetCreepWaveSpawnInterval&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetExperienceForLevel">HoN.GetExperienceForLevel&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetGameTime">HoN.GetGameTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetHellbourneTeam">HoN.GetHellbourneTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetHeroes">HoN.GetHeroes&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetItemDefinition">HoN.GetItemDefinition&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetLegionTeam">HoN.GetLegionTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetMatchTime">HoN.GetMatchTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetMetaTable">HoN.GetMetaTable&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetNeutralTeam">HoN.GetNeutralTeam&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetTeamBotBrain">HoN.GetTeamBotBrain&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetTimeUntilCreepWaveSpawn">HoN.GetTimeUntilCreepWaveSpawn&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetTotalTime">HoN.GetTotalTime&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetTreesInRadius">HoN.GetTreesInRadius&nbsp;(vecCenter, nRadius)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.GetUnitsInRadius">HoN.GetUnitsInRadius&nbsp;(vecCenter, nRadius, nMask)</a></td>
+	<td class="summary">Function</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#HoN.WillBlockNeutralSpawn">HoN.WillBlockNeutralSpawn&nbsp;()</a></td>
+	<td class="summary">Function</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    
+    <dl class="function">
+    <dt>
+    <a name = "HoN.CanSeePosition"></a>
+    <strong>HoN.CanSeePosition&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.DrawDebugLine"></a>
+    <strong>HoN.DrawDebugLine&nbsp;(vecStart, vecEnd, bArrow, sColor)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>vecStart</em></code>: </li>
+       <li><code><em>vecEnd</em></code>: </li>
+       <li><code><em>bArrow</em></code>: </li>
+       <li><code><em>sColor</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>void</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GameEntityExists"></a>
+    <strong>HoN.GameEntityExists&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetCreepWaveSpawnInterval"></a>
+    <strong>HoN.GetCreepWaveSpawnInterval&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetExperienceForLevel"></a>
+    <strong>HoN.GetExperienceForLevel&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetGameTime"></a>
+    <strong>HoN.GetGameTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetHellbourneTeam"></a>
+    <strong>HoN.GetHellbourneTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetHeroes"></a>
+    <strong>HoN.GetHeroes&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>unit</strong> }
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetItemDefinition"></a>
+    <strong>HoN.GetItemDefinition&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>itemdef</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetLegionTeam"></a>
+    <strong>HoN.GetLegionTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetMatchTime"></a>
+    <strong>HoN.GetMatchTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetMetaTable"></a>
+    <strong>HoN.GetMetaTable&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetNeutralTeam"></a>
+    <strong>HoN.GetNeutralTeam&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetTeamBotBrain"></a>
+    <strong>HoN.GetTeamBotBrain&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>teambot</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetTimeUntilCreepWaveSpawn"></a>
+    <strong>HoN.GetTimeUntilCreepWaveSpawn&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetTotalTime"></a>
+    <strong>HoN.GetTotalTime&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Number</strong> 
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetTreesInRadius"></a>
+    <strong>HoN.GetTreesInRadius&nbsp;(vecCenter, nRadius)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>vecCenter</em></code>: </li>
+       <li><code><em>nRadius</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>unit</strong> ,...}
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.GetUnitsInRadius"></a>
+    <strong>HoN.GetUnitsInRadius&nbsp;(vecCenter, nRadius, nMask)</strong>
+    </dt>
+    <dd>
+    Function 
+
+    <h3>Parameters:</h3>
+    <ul>
+       <li><code><em>vecCenter</em></code>: </li>
+       <li><code><em>nRadius</em></code>: </li>
+       <li><code><em>nMask</em></code>: </li>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Table</strong> {<strong>unit</strong> ,...}
+    </ol>
+
+
+</dd>
+    <dt>
+    <a name = "HoN.WillBlockNeutralSpawn"></a>
+    <strong>HoN.WillBlockNeutralSpawn&nbsp;()</strong>
+    </dt>
+    <dd>
+    Function 
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Boolean</strong> 
+    </ol>
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
