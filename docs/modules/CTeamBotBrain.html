@@ -54,11 +54,11 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#CTeamBotBrain:CanSeeUnit">CTeamBotBrain:CanSeeUnit&nbsp;(unitTarget, UnitCanBeSeen)</a></td>
+	<td class="name" nowrap><a href="#CTeamBotBrain:CanSeeUnit">CTeamBotBrain:CanSeeUnit&nbsp;(unitTarget)</a></td>
 	<td class="summary">Function to check if the target unit can be seen</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CTeamBotBrain:GetFrontOfCreepWavePosition">CTeamBotBrain:GetFrontOfCreepWavePosition&nbsp;(sLane, Position)</a></td>
+	<td class="name" nowrap><a href="#CTeamBotBrain:GetFrontOfCreepWavePosition">CTeamBotBrain:GetFrontOfCreepWavePosition&nbsp;(sLane)</a></td>
 	<td class="summary">Function to get the position of the front of the creepwave</td>
 	</tr>
 	<tr>
@@ -76,7 +76,7 @@
     <dl class="function">
     <dt>
     <a name = "CTeamBotBrain:CanSeeUnit"></a>
-    <strong>CTeamBotBrain:CanSeeUnit&nbsp;(unitTarget, UnitCanBeSeen)</strong>
+    <strong>CTeamBotBrain:CanSeeUnit&nbsp;(unitTarget)</strong>
     </dt>
     <dd>
     Function to check if the target unit can be seen 
@@ -84,16 +84,19 @@
     <h3>Parameters:</h3>
     <ul>
        <li><code><em>unitTarget</em></code>:  the target unit</li>
-       <li><code><em>UnitCanBeSeen</em></code>: <strong>bool</strong>  wether the target can be seen or not</li>
     </ul>
 
 
+    <h3>Returns:</h3>
+    <ol>
+        <strong>bool</strong> wether the target can be seen or not
+    </ol>
 
 
 </dd>
     <dt>
     <a name = "CTeamBotBrain:GetFrontOfCreepWavePosition"></a>
-    <strong>CTeamBotBrain:GetFrontOfCreepWavePosition&nbsp;(sLane, Position)</strong>
+    <strong>CTeamBotBrain:GetFrontOfCreepWavePosition&nbsp;(sLane)</strong>
     </dt>
     <dd>
     Function to get the position of the front of the creepwave 
@@ -101,10 +104,13 @@
     <h3>Parameters:</h3>
     <ul>
        <li><code><em>sLane</em></code>: <a href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a>  the lane</li>
-       <li><code><em>Position</em></code>: <strong>Vector3</strong>  the position of the front of the creepwave</li>
     </ul>
 
 
+    <h3>Returns:</h3>
+    <ol>
+        <strong>Vector3</strong> the position of the front of the creepwave
+    </ol>
 
 
 </dd>
@@ -119,7 +125,7 @@
 
     <h3>Returns:</h3>
     <ol>
-        number the team
+        <strong>number</strong> the team
     </ol>
 
 
