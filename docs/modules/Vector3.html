@@ -40,7 +40,7 @@
 <ul>
   <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
-  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataLink.html">CBotMetaDataLink</a></li>
   <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
@@ -63,10 +63,11 @@
 <p>Vector3 library</p>
 <p></p>
 
+
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Create">Create&nbsp;([, nY, nZ)</a></td>
+	<td class="name" nowrap><a href="#Create">Create&nbsp;( [nX] [, nY] [, nZ])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -94,15 +95,15 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Length">Length&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#Length">Length&nbsp;(vec)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#LengthSq">LengthSq&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#LengthSq">LengthSq&nbsp;(vec)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Normalize">Normalize&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#Normalize">Normalize&nbsp;(vec)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -116,27 +117,36 @@
 
 
     <h2><a name="Functions"></a>Functions</h2>
-    
+
     <dl class="function">
     <dt>
     <a name = "Create"></a>
-    <strong>Create&nbsp;([, nY, nZ)</strong>
+    <strong>Create&nbsp;( [nX] [, nY] [, nZ])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>[</em></code>: </li>
-       <li><code><em>nY</em></code>: </li>
-       <li><code><em>nZ</em></code>: </li>
+      <li><span class="parameter">nX</span>
+        <span class="types"><span class="type">number</span></span>
+       the x coordinate</li>
+      <li><span class="parameter">nY</span>
+        <span class="types"><span class="type">number</span></span>
+       the y coordinate</li>
+      <li><span class="parameter">nZ</span>
+        <span class="types"><span class="type">number</span></span>
+       the z coordinate, this is not needed most of the times</li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/Vector3.html#">Vector3</a> 
+
+          <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -145,19 +155,26 @@
     <strong>Cross&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/Vector3.html#">Vector3</a> 
+
+          <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -166,19 +183,26 @@
     <strong>Distance&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -187,19 +211,26 @@
     <strong>Distance2D&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -208,19 +239,26 @@
     <strong>Distance2DSq&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -229,19 +267,26 @@
     <strong>DistanceSq&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -250,67 +295,101 @@
     <strong>Dot&nbsp;(vec1, vec2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vec1</em></code>: </li>
-       <li><code><em>vec2</em></code>: </li>
+      <li><span class="parameter">vec1</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vec2</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "Length"></a>
-    <strong>Length&nbsp;()</strong>
+    <strong>Length&nbsp;(vec)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vec</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "LengthSq"></a>
-    <strong>LengthSq&nbsp;()</strong>
+    <strong>LengthSq&nbsp;(vec)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vec</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "Normalize"></a>
-    <strong>Normalize&nbsp;()</strong>
+    <strong>Normalize&nbsp;(vec)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vec</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/Vector3.html#">Vector3</a> 
+
+          <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -319,19 +398,26 @@
     <strong>Project&nbsp;(vecOnto, vecToProject)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vecOnto</em></code>: </li>
-       <li><code><em>vecToProject</em></code>: </li>
+      <li><span class="parameter">vecOnto</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vecToProject</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/Vector3.html#">Vector3</a> 
+
+          <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -341,7 +427,7 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3</a></i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

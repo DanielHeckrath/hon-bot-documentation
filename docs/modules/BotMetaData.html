@@ -40,7 +40,7 @@
 <ul>
   <li><strong>BotMetaData</strong></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
-  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataLink.html">CBotMetaDataLink</a></li>
   <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
@@ -63,14 +63,15 @@
 <p>BotMetaData library</p>
 <p></p>
 
+
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#FindPath">FindPath&nbsp;(vecStartPos, vecEndPos, funcGetCost, funcGetHeuristic)</a></td>
+	<td class="name" nowrap><a href="#FindPath">FindPath&nbsp;(vecStartPos, vecEndPos [, funcGetCost] [, funcGetHeuristic])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#GetClosestNode">GetClosestNode&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#GetClosestNode">GetClosestNode&nbsp;(vecPos)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -78,11 +79,11 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#RegisterLayer">RegisterLayer&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#RegisterLayer">RegisterLayer&nbsp;(sPath)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#SetActiveLayer">SetActiveLayer&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#SetActiveLayer">SetActiveLayer&nbsp;(sPath)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 </table>
@@ -92,44 +93,64 @@
 
 
     <h2><a name="Functions"></a>Functions</h2>
-    
+
     <dl class="function">
     <dt>
     <a name = "FindPath"></a>
-    <strong>FindPath&nbsp;(vecStartPos, vecEndPos, funcGetCost, funcGetHeuristic)</strong>
+    <strong>FindPath&nbsp;(vecStartPos, vecEndPos [, funcGetCost] [, funcGetHeuristic])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vecStartPos</em></code>: </li>
-       <li><code><em>vecEndPos</em></code>: </li>
-       <li><code><em>funcGetCost</em></code>: </li>
-       <li><code><em>funcGetHeuristic</em></code>: </li>
+      <li><span class="parameter">vecStartPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vecEndPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">funcGetCost</span>
+        <span class="types"><span class="type">func</span></span>
+      </li>
+      <li><span class="parameter">funcGetHeuristic</span>
+        <span class="types"><span class="type">func</span></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> 
+
+          <span class="types"><span class="type">tab</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "GetClosestNode"></a>
-    <strong>GetClosestNode&nbsp;()</strong>
+    <strong>GetClosestNode&nbsp;(vecPos)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vecPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a> 
+
+          <span class="types"><a class="type" href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -138,52 +159,79 @@
     <strong>GetClosestNodeOnPath&nbsp;(tPath, vecPos)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>tPath</em></code>: </li>
-       <li><code><em>vecPos</em></code>: </li>
+      <li><span class="parameter">tPath</span>
+        <span class="types"><span class="type">tab</span></span>
+      </li>
+      <li><span class="parameter">vecPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <li><a href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a> </li>
-        <li><strong>Number</strong> </li>
+        <li>
+          <span class="types"><a class="type" href="../modules/CBotMetaDataNode.html#">CBotMetaDataNode</a></span>
+        </li>
+        <li>
+          <span class="types"><span class="type">Number</span></span>
+        </li>
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "RegisterLayer"></a>
-    <strong>RegisterLayer&nbsp;()</strong>
+    <strong>RegisterLayer&nbsp;(sPath)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sPath</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> 
+
+          <span class="types"><span class="type">tab</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "SetActiveLayer"></a>
-    <strong>SetActiveLayer&nbsp;()</strong>
+    <strong>SetActiveLayer&nbsp;(sPath)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sPath</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> 
+
+          <span class="types"><span class="type">tab</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -193,7 +241,7 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3</a></i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

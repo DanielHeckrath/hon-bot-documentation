@@ -2,37 +2,49 @@
 -- @module GlobalFunctions
 
 --- Function
--- @treturn void
+-- @number nTeam
+-- @string sDefinitionName
 function AddBot(nTeam, sDefinitionName)
+end
 
---- Function
--- @treturn void
-function StartGame(String type, String name, String options)
+--- Starts the game
+-- @string type
+-- @string name
+-- @string options
+function StartGame(type, name, options)
+end
 
---- Function
--- @treturn void
-function Echo(String text)
+--- Prints the string
+-- @string text
+function Echo(text)
+end
 
---- Function
--- @treturn Number
+--- Gets the time
+-- @treturn number
 function GetTime()
+end
 
---- Function
--- @treturn Number
+--- Gets the time of dawn
+-- @treturn number
 function GetTimeOfDawn()
+end
 
---- Function
--- @treturn void
+--- Prints the given parameters
+-- @param ...
 function print(...)
+end
 
---- Function
+--- Rounds the given number
+-- @number Number
 -- @treturn Number
 function Round(Number)
+end
 
---- Function
--- @treturn void
+--- Starts the profile with the given name
+-- @string sName
 function StartProfile(sName)
+end
 
---- Function
--- @treturn void
+--- Stops the active profile
 function StopProfile()
+end

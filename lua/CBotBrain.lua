@@ -3,135 +3,160 @@
 
 
 --- Function
--- @treturn Boolean
+-- @tparam IUnitEntity unitTarget
+-- @treturn bool
 function CBotBrain:CanSeeUnit(unitTarget)
 
 --- Function
--- @treturn Boolean
+-- @tparam string sHeroName
+-- @treturn bool
 function CBotBrain:CanSelectHero(sHeroName)
 
 --- Function
--- @treturn void
+-- @tparam string sText
 function CBotBrain:Chat(sText)
 
 --- Function
--- @treturn void
+-- @tparam string sText
 function CBotBrain:ChatTeam(sText)
 
 --- Function
--- @treturn Number CBotBrain
+-- @treturn number
 function CBotBrain:GetGold()
 
 --- Function
--- @treturn Number
+-- @treturn number
 function CBotBrain:GetGoldEarned()
 
 --- Function
--- @treturn Number
+-- @treturn number
 function CBotBrain:GetGPM()
 
 --- Function
--- @treturn unit
+-- @treturn IUnitEntity
 function CBotBrain:GetHeroUnit()
 
 --- Function
--- @treturn String
+-- @treturn string
 function CBotBrain:GetName()
 
 --- Function
--- @treturn String
+-- @treturn string
 function CBotBrain:GetPotentialHero()
 
 --- Function
--- @treturn Number
+-- @treturn number
 function CBotBrain:GetTeam()
 
 --- Function
--- @treturn Boolean
+-- @treturn bool
 function CBotBrain:HasSelectedHero()
 
 --- Function
--- @treturn Boolean
+-- @treturn bool
 function CBotBrain:IsHeroLocked()
 
 --- Function
--- @treturn void
-function CBotBrain:Order(Unit unit, String order, String queue = "none")
+-- @tparam IUnitEntity unit
+-- @tparam string order
+-- @tparam string queue defaults to "none"
+function CBotBrain:Order(unit, order, queue)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderAbility(Ability ability, [bool queueCommand = false])
+-- @tparam IEntityAbility ability
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderAbility(ability, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderAbility2(Ability ability, [bool queueCommand = false])
+-- @tparam IEntityAbility ability
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderAbility2(ability, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderAbilityEntity(Ability ability, Unit target, [bool queueCommand = false])
+-- @tparam IEntityAbility ability
+-- @tparam IUnitEntity target
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderAbilityEntity(ability, target, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderAbilityPosition(Ability ability, Vector3 pos, [bool queueCommand = false])
+-- @tparam IEntityAbility ability
+-- @tparam Vector3 pos
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderAbilityPosition(ability, pos, queueCommand)
 
 --- Function
--- @tparam Ability ability the ability
+-- @tparam IEntityAbility ability the ability
 -- @tparam Vector3 startPos the start position
 -- @tparam Vector3 endPos the end position
 -- @tparam[opt] bool queueCommand add the order to the command queue
--- @treturn void
 function CBotBrain:OrderAbilityVector(ability,startPos,endPos,queueCommand)
 
 --- Function
--- @tparam Unit unit the unit
--- @tparam String order the order
--- @tparam[opt] Unit target the target
--- @tparam[opt] String queue the queue
--- @tparam[opt] Item item the item
+-- @tparam IUnitEntity unit the unit
+-- @tparam string order the order
+-- @tparam[opt] IUnitEntity target the target
+-- @tparam[opt] string queue the queue
+-- @tparam[opt] IEntityItem item the item
 -- @tparam[opt] bool useDirectPathing use direct pasing
--- @treturn void
 function CBotBrain:OrderEntity(unit,order,target,queue,item,useDirectPathing)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderItem(Item item, [bool queueCommand = false])
+-- @tparam IEntityItem item
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderItem(item, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderItem2(Item item, [bool queueCommand = false])
+-- @tparam IEntityItem item
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderItem2(item, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderItemEntity(Item item, Unit target, [bool queueCommand = false])
+-- @tparam IEntityItem item
+-- @tparam IUnitEntity target
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderItemEntity(item, target, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderItemPosition(Item item, Vector3 pos, [bool queueCommand = false])
+-- @tparam IEntityItem item
+-- @tparam Vector3 pos
+-- @tparam[opt] bool queueCommand defaults to "false"
+function CBotBrain:OrderItemPosition(item, pos, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderItemVector(Item item, Vector3 startPos, Vector3 endPos, [bool queueCommand = false])
+-- @tparam IEntityItem item the item
+-- @tparam Vector3 startPos the start position
+-- @tparam Vector3 endPos the end position
+-- @tparam[opt] bool queueCommand add the order to the command queue
+function CBotBrain:OrderItemVector(item, startPos, endPos, queueCommand)
 
 --- Function
--- @treturn void
-function CBotBrain:OrderPosition(Unit unit, String order, Vector3 position, [String queue = "none", Item item = NULL, bool useDirectPathing = false])
+-- @tparam IUnitEntity unit the unit
+-- @tparam string order the order
+-- @tparam Vector3 position the position
+-- @tparam[opt] string queue the queue
+-- @tparam[opt] IEntityItem item the item
+-- @tparam[opt] bool useDirectPathing use direct pasing
+function CBotBrain:OrderPosition(unit, order, position, queue, item, useDirectPathing)
 
 --- Function
--- @treturn void
 function CBotBrain:Ready()
 
 --- Function
--- @treturn void
+-- @tparam string sHeroName
 function CBotBrain:SelectHero(sHeroName)
 
 --- Function
--- @treturn void
+-- @tparam string sHeroName
 function CBotBrain:SelectPotentialHero(sHeroName)
 
 --- Function
--- @treturn void
+-- @tparam bool bAllChat
+-- @tparam string sMessageKey
+-- @tparam tab tMessageTokens
 function CBotBrain:SendBotMessage(bAllChat, sMessageKey, tMessageTokens)
 
 --- Function
--- @treturn void
+-- @tparam Player player
+-- @tparam bool bShare
+-- @tparam bool bFullControl
 function CBotBrain:ShareControl(player, bShare, bFullControl)

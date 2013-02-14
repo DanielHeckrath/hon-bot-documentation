@@ -40,7 +40,7 @@
 <ul>
   <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
   <li><strong>CBotBrain</strong></li>
-  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataLink.html">CBotMetaDataLink</a></li>
   <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
@@ -63,22 +63,15 @@
 <p>BotBrain members</p>
 <p></p>
 
+
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:CanSeeUnit">CBotBrain:CanSeeUnit&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:CanSeeUnit">CBotBrain:CanSeeUnit&nbsp;(unitTarget)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:CanSelectHero">CBotBrain:CanSelectHero&nbsp;()</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:Chat">CBotBrain:Chat&nbsp;()</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:ChatTeam">CBotBrain:ChatTeam&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:Chat">CBotBrain:Chat&nbsp;(sText)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -118,75 +111,39 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:Order">CBotBrain:Order&nbsp;(Unit, String, String)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:Order">CBotBrain:Order&nbsp;(unit, order, queue)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbility">CBotBrain:OrderAbility&nbsp;(Ability, [)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbility2">CBotBrain:OrderAbility2&nbsp;(ability [, queueCommand])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbility2">CBotBrain:OrderAbility2&nbsp;(Ability, [)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityPosition">CBotBrain:OrderAbilityPosition&nbsp;(ability, pos [, queueCommand])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityEntity">CBotBrain:OrderAbilityEntity&nbsp;(Ability, Unit, [)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderEntity">CBotBrain:OrderEntity&nbsp;(unit, order [, target] [, queue] [, item] [, useDirectPathing])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityPosition">CBotBrain:OrderAbilityPosition&nbsp;(Ability, Vector3, [)</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItem2">CBotBrain:OrderItem2&nbsp;(item [, queueCommand])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderAbilityVector">CBotBrain:OrderAbilityVector&nbsp;(ability, startPos, endPos[, queueCommand])</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderItemPosition">CBotBrain:OrderItemPosition&nbsp;(item, pos [, queueCommand])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderEntity">CBotBrain:OrderEntity&nbsp;(unit, order[, target][, queue][, item][, useDirectPathing])</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:OrderPosition">CBotBrain:OrderPosition&nbsp;(unit, order, position [, queue] [, item] [, useDirectPathing])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderItem">CBotBrain:OrderItem&nbsp;(Item, [)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderItem2">CBotBrain:OrderItem2&nbsp;(Item, [)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderItemEntity">CBotBrain:OrderItemEntity&nbsp;(Item, Unit, [)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderItemPosition">CBotBrain:OrderItemPosition&nbsp;(Item, Vector3, [)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderItemVector">CBotBrain:OrderItemVector&nbsp;(Item, Vector3, Vector3, [)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:OrderPosition">CBotBrain:OrderPosition&nbsp;(Unit, String, Vector3, [, Item, bool)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:Ready">CBotBrain:Ready&nbsp;()</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:SelectHero">CBotBrain:SelectHero&nbsp;()</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:SelectPotentialHero">CBotBrain:SelectPotentialHero&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#CBotBrain:SelectHero">CBotBrain:SelectHero&nbsp;(sHeroName)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#CBotBrain:SendBotMessage">CBotBrain:SendBotMessage&nbsp;(bAllChat, sMessageKey, tMessageTokens)</a></td>
-	<td class="summary">Function</td>
-	</tr>
-	<tr>
-	<td class="name" nowrap><a href="#CBotBrain:ShareControl">CBotBrain:ShareControl&nbsp;(player, bShare, bFullControl)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 </table>
@@ -196,69 +153,49 @@
 
 
     <h2><a name="Functions"></a>Functions</h2>
-    
+
     <dl class="function">
     <dt>
     <a name = "CBotBrain:CanSeeUnit"></a>
-    <strong>CBotBrain:CanSeeUnit&nbsp;()</strong>
+    <strong>CBotBrain:CanSeeUnit&nbsp;(unitTarget)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">unitTarget</span>
+        <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">bool</span></span>
+
     </ol>
 
 
-</dd>
-    <dt>
-    <a name = "CBotBrain:CanSelectHero"></a>
-    <strong>CBotBrain:CanSelectHero&nbsp;()</strong>
-    </dt>
-    <dd>
-    Function 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>Boolean</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:Chat"></a>
-    <strong>CBotBrain:Chat&nbsp;()</strong>
+    <strong>CBotBrain:Chat&nbsp;(sText)</strong>
     </dt>
     <dd>
-    Function 
+    Function
+
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sText</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
-
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:ChatTeam"></a>
-    <strong>CBotBrain:ChatTeam&nbsp;()</strong>
-    </dt>
-    <dd>
-    Function 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
@@ -267,14 +204,17 @@
     <strong>CBotBrain:GetGold&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> CBotBrain
+
+          <span class="types"><span class="type">number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -283,14 +223,17 @@
     <strong>CBotBrain:GetGoldEarned&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -299,14 +242,17 @@
     <strong>CBotBrain:GetGPM&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -315,14 +261,17 @@
     <strong>CBotBrain:GetHeroUnit&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>unit</strong> 
+
+          <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -331,14 +280,17 @@
     <strong>CBotBrain:GetName&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -347,14 +299,17 @@
     <strong>CBotBrain:GetPotentialHero&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -363,14 +318,17 @@
     <strong>CBotBrain:GetTeam&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -379,14 +337,17 @@
     <strong>CBotBrain:HasSelectedHero&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">bool</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -395,352 +356,223 @@
     <strong>CBotBrain:IsHeroLocked&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">bool</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:Order"></a>
-    <strong>CBotBrain:Order&nbsp;(Unit, String, String)</strong>
+    <strong>CBotBrain:Order&nbsp;(unit, order, queue)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Unit</em></code>: </li>
-       <li><code><em>String</em></code>: </li>
-       <li><code><em>String</em></code>: </li>
+      <li><span class="parameter">unit</span>
+        <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+      </li>
+      <li><span class="parameter">order</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+      <li><span class="parameter">queue</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       defaults to "none"</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderAbility"></a>
-    <strong>CBotBrain:OrderAbility&nbsp;(Ability, [)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>Ability</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderAbility2"></a>
-    <strong>CBotBrain:OrderAbility2&nbsp;(Ability, [)</strong>
+    <strong>CBotBrain:OrderAbility2&nbsp;(ability [, queueCommand])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Ability</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
+      <li><span class="parameter">ability</span>
+        <span class="types"><a class="type" href="../modules/IEntityAbility.html#">IEntityAbility</a></span>
+      </li>
+      <li><span class="parameter">queueCommand</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to "false"</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderAbilityEntity"></a>
-    <strong>CBotBrain:OrderAbilityEntity&nbsp;(Ability, Unit, [)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>Ability</em></code>: </li>
-       <li><code><em>Unit</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderAbilityPosition"></a>
-    <strong>CBotBrain:OrderAbilityPosition&nbsp;(Ability, Vector3, [)</strong>
+    <strong>CBotBrain:OrderAbilityPosition&nbsp;(ability, pos [, queueCommand])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Ability</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
+      <li><span class="parameter">ability</span>
+        <span class="types"><a class="type" href="../modules/IEntityAbility.html#">IEntityAbility</a></span>
+      </li>
+      <li><span class="parameter">pos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">queueCommand</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to "false"</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderAbilityVector"></a>
-    <strong>CBotBrain:OrderAbilityVector&nbsp;(ability, startPos, endPos[, queueCommand])</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>ability</em></code>: <strong>Ability</strong>  the ability</li>
-       <li><code><em>startPos</em></code>: <a href="../modules/Vector3.html#">Vector3</a>  the start position</li>
-       <li><code><em>endPos</em></code>: <a href="../modules/Vector3.html#">Vector3</a>  the end position</li>
-       <li><code><em>queueCommand</em></code>: <strong>bool</strong>  add the order to the command queue</li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderEntity"></a>
-    <strong>CBotBrain:OrderEntity&nbsp;(unit, order[, target][, queue][, item][, useDirectPathing])</strong>
+    <strong>CBotBrain:OrderEntity&nbsp;(unit, order [, target] [, queue] [, item] [, useDirectPathing])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>unit</em></code>: <strong>Unit</strong>  the unit</li>
-       <li><code><em>order</em></code>: <strong>String</strong>  the order</li>
-       <li><code><em>target</em></code>: <strong>Unit</strong>  the target</li>
-       <li><code><em>queue</em></code>: <strong>String</strong>  the queue</li>
-       <li><code><em>item</em></code>: <strong>Item</strong>  the item</li>
-       <li><code><em>useDirectPathing</em></code>: <strong>bool</strong>  use direct pasing</li>
+      <li><span class="parameter">unit</span>
+        <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+       the unit</li>
+      <li><span class="parameter">order</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       the order</li>
+      <li><span class="parameter">target</span>
+        <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+       the target</li>
+      <li><span class="parameter">queue</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       the queue</li>
+      <li><span class="parameter">item</span>
+        <span class="types"><a class="type" href="../modules/IEntityItem.html#">IEntityItem</a></span>
+       the item</li>
+      <li><span class="parameter">useDirectPathing</span>
+        <span class="types"><span class="type">bool</span></span>
+       use direct pasing</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderItem"></a>
-    <strong>CBotBrain:OrderItem&nbsp;(Item, [)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderItem2"></a>
-    <strong>CBotBrain:OrderItem2&nbsp;(Item, [)</strong>
+    <strong>CBotBrain:OrderItem2&nbsp;(item [, queueCommand])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
+      <li><span class="parameter">item</span>
+        <span class="types"><a class="type" href="../modules/IEntityItem.html#">IEntityItem</a></span>
+      </li>
+      <li><span class="parameter">queueCommand</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to "false"</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderItemEntity"></a>
-    <strong>CBotBrain:OrderItemEntity&nbsp;(Item, Unit, [)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>Unit</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderItemPosition"></a>
-    <strong>CBotBrain:OrderItemPosition&nbsp;(Item, Vector3, [)</strong>
+    <strong>CBotBrain:OrderItemPosition&nbsp;(item, pos [, queueCommand])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
+      <li><span class="parameter">item</span>
+        <span class="types"><a class="type" href="../modules/IEntityItem.html#">IEntityItem</a></span>
+      </li>
+      <li><span class="parameter">pos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">queueCommand</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to "false"</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:OrderItemVector"></a>
-    <strong>CBotBrain:OrderItemVector&nbsp;(Item, Vector3, Vector3, [)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:OrderPosition"></a>
-    <strong>CBotBrain:OrderPosition&nbsp;(Unit, String, Vector3, [, Item, bool)</strong>
+    <strong>CBotBrain:OrderPosition&nbsp;(unit, order, position [, queue] [, item] [, useDirectPathing])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>Unit</em></code>: </li>
-       <li><code><em>String</em></code>: </li>
-       <li><code><em>Vector3</em></code>: </li>
-       <li><code><em>[</em></code>: </li>
-       <li><code><em>Item</em></code>: </li>
-       <li><code><em>bool</em></code>: </li>
+      <li><span class="parameter">unit</span>
+        <span class="types"><a class="type" href="../modules/IUnitEntity.html#">IUnitEntity</a></span>
+       the unit</li>
+      <li><span class="parameter">order</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       the order</li>
+      <li><span class="parameter">position</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+       the position</li>
+      <li><span class="parameter">queue</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       the queue</li>
+      <li><span class="parameter">item</span>
+        <span class="types"><a class="type" href="../modules/IEntityItem.html#">IEntityItem</a></span>
+       the item</li>
+      <li><span class="parameter">useDirectPathing</span>
+        <span class="types"><span class="type">bool</span></span>
+       use direct pasing</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:Ready"></a>
-    <strong>CBotBrain:Ready&nbsp;()</strong>
-    </dt>
-    <dd>
-    Function 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
     <dt>
     <a name = "CBotBrain:SelectHero"></a>
-    <strong>CBotBrain:SelectHero&nbsp;()</strong>
+    <strong>CBotBrain:SelectHero&nbsp;(sHeroName)</strong>
     </dt>
     <dd>
-    Function 
+    Function
+
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sHeroName</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
-
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:SelectPotentialHero"></a>
-    <strong>CBotBrain:SelectPotentialHero&nbsp;()</strong>
-    </dt>
-    <dd>
-    Function 
-
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
@@ -749,42 +581,23 @@
     <strong>CBotBrain:SendBotMessage&nbsp;(bAllChat, sMessageKey, tMessageTokens)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>bAllChat</em></code>: </li>
-       <li><code><em>sMessageKey</em></code>: </li>
-       <li><code><em>tMessageTokens</em></code>: </li>
+      <li><span class="parameter">bAllChat</span>
+        <span class="types"><span class="type">bool</span></span>
+      </li>
+      <li><span class="parameter">sMessageKey</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+      <li><span class="parameter">tMessageTokens</span>
+        <span class="types"><span class="type">tab</span></span>
+      </li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
-
-</dd>
-    <dt>
-    <a name = "CBotBrain:ShareControl"></a>
-    <strong>CBotBrain:ShareControl&nbsp;(player, bShare, bFullControl)</strong>
-    </dt>
-    <dd>
-    Function 
-
-    <h3>Parameters:</h3>
-    <ul>
-       <li><code><em>player</em></code>: </li>
-       <li><code><em>bShare</em></code>: </li>
-       <li><code><em>bFullControl</em></code>: </li>
-    </ul>
-
-
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
 
 
 </dd>
@@ -794,7 +607,7 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3</a></i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
