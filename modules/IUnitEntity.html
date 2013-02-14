@@ -40,7 +40,7 @@
 <ul>
   <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
-  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataLink.html">CBotMetaDataLink</a></li>
   <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
@@ -63,18 +63,19 @@
 <p>IUnitEntity members</p>
 <p></p>
 
+
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:CanAccess">IUnitEntity:CanAccess&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:CanAccess">IUnitEntity:CanAccess&nbsp;(item)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:FindItemInInventory">IUnitEntity:FindItemInInventory&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:FindItemInInventory">IUnitEntity:FindItemInInventory&nbsp;(sItemName)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetAbility">IUnitEntity:GetAbility&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetAbility">IUnitEntity:GetAbility&nbsp;(nSlot)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -194,19 +195,19 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetInventory">IUnitEntity:GetInventory&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetInventory">IUnitEntity:GetInventory&nbsp;( [bAppendStash])</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetItem">IUnitEntity:GetItem&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItem">IUnitEntity:GetItem&nbsp;(nSlot)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetItemComponentsRemaining">IUnitEntity:GetItemComponentsRemaining&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItemComponentsRemaining">IUnitEntity:GetItemComponentsRemaining&nbsp;(itemdef)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetItemCostRemaining">IUnitEntity:GetItemCostRemaining&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetItemCostRemaining">IUnitEntity:GetItemCostRemaining&nbsp;(itemdef)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -270,7 +271,7 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:GetRemainingCooldownTime">IUnitEntity:GetRemainingCooldownTime&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:GetRemainingCooldownTime">IUnitEntity:GetRemainingCooldownTime&nbsp;(param)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -314,7 +315,7 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:HasState">IUnitEntity:HasState&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:HasState">IUnitEntity:HasState&nbsp;(sName)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -390,7 +391,7 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:IsUnitType">IUnitEntity:IsUnitType&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:IsUnitType">IUnitEntity:IsUnitType&nbsp;(sType)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -398,15 +399,15 @@
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:PurchaseRemaining">IUnitEntity:PurchaseRemaining&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:PurchaseRemaining">IUnitEntity:PurchaseRemaining&nbsp;(itemdef)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:Sell">IUnitEntity:Sell&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:Sell">IUnitEntity:Sell&nbsp;(item)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#IUnitEntity:SellBySlot">IUnitEntity:SellBySlot&nbsp;()</a></td>
+	<td class="name" nowrap><a href="#IUnitEntity:SellBySlot">IUnitEntity:SellBySlot&nbsp;(nSlot)</a></td>
 	<td class="summary">Function</td>
 	</tr>
 	<tr>
@@ -424,53 +425,80 @@
 
 
     <h2><a name="Functions"></a>Functions</h2>
-    
+
     <dl class="function">
     <dt>
     <a name = "IUnitEntity:CanAccess"></a>
-    <strong>IUnitEntity:CanAccess&nbsp;()</strong>
+    <strong>IUnitEntity:CanAccess&nbsp;(item)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">item</span>
+        <span class="types"><span class="type">Item</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:FindItemInInventory"></a>
-    <strong>IUnitEntity:FindItemInInventory&nbsp;()</strong>
+    <strong>IUnitEntity:FindItemInInventory&nbsp;(sItemName)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sItemName</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>item</strong> }
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {item}
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetAbility"></a>
-    <strong>IUnitEntity:GetAbility&nbsp;()</strong>
+    <strong>IUnitEntity:GetAbility&nbsp;(nSlot)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nSlot</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>ability</strong> 
+
+          <span class="types"><span class="type">ability</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -479,14 +507,17 @@
     <strong>IUnitEntity:GetAbilityPointsAvailable&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -495,14 +526,17 @@
     <strong>IUnitEntity:GetActionState&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><span class="type">String</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -511,14 +545,17 @@
     <strong>IUnitEntity:GetAdjustedAttackActionTime&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -527,14 +564,17 @@
     <strong>IUnitEntity:GetAdjustedAttackCooldown&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -543,14 +583,17 @@
     <strong>IUnitEntity:GetAdjustedAttackDuration&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -559,14 +602,17 @@
     <strong>IUnitEntity:GetArmor&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -575,14 +621,17 @@
     <strong>IUnitEntity:GetAttackDamageMax&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -591,14 +640,17 @@
     <strong>IUnitEntity:GetAttackDamageMin&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -607,14 +659,17 @@
     <strong>IUnitEntity:GetAttackProjectileSpeed&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -623,14 +678,17 @@
     <strong>IUnitEntity:GetAttackRange&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -639,14 +697,17 @@
     <strong>IUnitEntity:GetAttackSpeed&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -655,14 +716,17 @@
     <strong>IUnitEntity:GetAttackTarget&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><span class="type">String</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -671,14 +735,17 @@
     <strong>IUnitEntity:GetAttackType&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><span class="type">String</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -687,14 +754,17 @@
     <strong>IUnitEntity:GetBaseDamage&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -703,14 +773,17 @@
     <strong>IUnitEntity:GetBehavior&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Behavior</strong> 
+
+          <span class="types"><span class="type">Behavior</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -719,14 +792,17 @@
     <strong>IUnitEntity:GetBoundsRadius&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -735,14 +811,17 @@
     <strong>IUnitEntity:GetBuyBackCost&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -751,14 +830,17 @@
     <strong>IUnitEntity:GetCanAttack&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -767,14 +849,17 @@
     <strong>IUnitEntity:GetCliffwalking&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -783,14 +868,17 @@
     <strong>IUnitEntity:GetDisplayName&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>sName</strong> 
+
+          <span class="types"><span class="type">sName</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -799,14 +887,17 @@
     <strong>IUnitEntity:GetEvasionMelee&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -815,14 +906,17 @@
     <strong>IUnitEntity:GetEvasionRanged&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -831,14 +925,17 @@
     <strong>IUnitEntity:GetExperienceForCurrentLevel&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -847,14 +944,17 @@
     <strong>IUnitEntity:GetExperienceForNextLevel&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -863,14 +963,17 @@
     <strong>IUnitEntity:GetFinalAttackDamageMax&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -879,14 +982,17 @@
     <strong>IUnitEntity:GetFinalAttackDamageMin&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -895,14 +1001,17 @@
     <strong>IUnitEntity:GetHealth&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -911,14 +1020,17 @@
     <strong>IUnitEntity:GetHealthPercent&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -927,78 +1039,117 @@
     <strong>IUnitEntity:GetHealthRegen&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetInventory"></a>
-    <strong>IUnitEntity:GetInventory&nbsp;()</strong>
+    <strong>IUnitEntity:GetInventory&nbsp;( [bAppendStash])</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">bAppendStash</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to false</li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>Item</strong> }
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {Item}
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetItem"></a>
-    <strong>IUnitEntity:GetItem&nbsp;()</strong>
+    <strong>IUnitEntity:GetItem&nbsp;(nSlot)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nSlot</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>item</strong> 
+
+          <span class="types"><span class="type">item</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetItemComponentsRemaining"></a>
-    <strong>IUnitEntity:GetItemComponentsRemaining&nbsp;()</strong>
+    <strong>IUnitEntity:GetItemComponentsRemaining&nbsp;(itemdef)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">itemdef</span>
+        <span class="types"><span class="type">ItemDefinition</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>itemdef</strong> }
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {itemdef}
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetItemCostRemaining"></a>
-    <strong>IUnitEntity:GetItemCostRemaining&nbsp;()</strong>
+    <strong>IUnitEntity:GetItemCostRemaining&nbsp;(itemdef)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">itemdef</span>
+        <span class="types"><span class="type">ItemDefinition</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1007,14 +1158,17 @@
     <strong>IUnitEntity:GetLevel&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1023,14 +1177,17 @@
     <strong>IUnitEntity:GetLifeSteal&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1039,14 +1196,17 @@
     <strong>IUnitEntity:GetMagicArmor&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1055,14 +1215,17 @@
     <strong>IUnitEntity:GetMagicResistance&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1071,14 +1234,17 @@
     <strong>IUnitEntity:GetMana&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1087,14 +1253,17 @@
     <strong>IUnitEntity:GetManaPercent&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1103,14 +1272,17 @@
     <strong>IUnitEntity:GetManaRegen&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1119,14 +1291,17 @@
     <strong>IUnitEntity:GetMaxHealth&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1135,14 +1310,17 @@
     <strong>IUnitEntity:GetMaxMana&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1151,14 +1329,17 @@
     <strong>IUnitEntity:GetMoveSpeed&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1167,14 +1348,17 @@
     <strong>IUnitEntity:GetNumBuyBacks&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1183,14 +1367,17 @@
     <strong>IUnitEntity:GetOwnerPlayer&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>player</strong> 
+
+          <span class="types"><span class="type">player</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1199,14 +1386,17 @@
     <strong>IUnitEntity:GetPhysicalResistance&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1215,14 +1405,17 @@
     <strong>IUnitEntity:GetPosition&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <a href="../modules/Vector3.html#">Vector3</a> 
+
+          <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1231,30 +1424,42 @@
     <strong>IUnitEntity:GetPrimaryAttribute&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><span class="type">String</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:GetRemainingCooldownTime"></a>
-    <strong>IUnitEntity:GetRemainingCooldownTime&nbsp;()</strong>
+    <strong>IUnitEntity:GetRemainingCooldownTime&nbsp;(param)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">param</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a> or <span class="type">itemdef</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1263,14 +1468,17 @@
     <strong>IUnitEntity:GetRemainingRespawnTime&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1279,14 +1487,17 @@
     <strong>IUnitEntity:GetStashAccess&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1295,14 +1506,17 @@
     <strong>IUnitEntity:GetStats&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>Number</strong> }
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {Number}
     </ol>
+
+
 
 
 </dd>
@@ -1311,14 +1525,17 @@
     <strong>IUnitEntity:GetTeam&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1327,14 +1544,17 @@
     <strong>IUnitEntity:GetTreewalking&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1343,14 +1563,17 @@
     <strong>IUnitEntity:GetTypeName&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>String</strong> 
+
+          <span class="types"><span class="type">String</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1359,14 +1582,17 @@
     <strong>IUnitEntity:GetUniqueID&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1375,14 +1601,17 @@
     <strong>IUnitEntity:GetUnitwalking&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1391,14 +1620,17 @@
     <strong>IUnitEntity:GetXPM&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1407,30 +1639,42 @@
     <strong>IUnitEntity:HasDeniablePotential&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:HasState"></a>
-    <strong>IUnitEntity:HasState&nbsp;()</strong>
+    <strong>IUnitEntity:HasState&nbsp;(sName)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sName</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1439,14 +1683,17 @@
     <strong>IUnitEntity:IsAlive&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1455,14 +1702,17 @@
     <strong>IUnitEntity:IsAttackReady&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1471,14 +1721,17 @@
     <strong>IUnitEntity:IsBase&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1487,14 +1740,17 @@
     <strong>IUnitEntity:IsBotControlled&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1503,14 +1759,17 @@
     <strong>IUnitEntity:IsBuilding&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1519,14 +1778,17 @@
     <strong>IUnitEntity:IsChanneling&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1535,14 +1797,17 @@
     <strong>IUnitEntity:IsDeniable&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1551,14 +1816,17 @@
     <strong>IUnitEntity:IsDisarmed&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1567,14 +1835,17 @@
     <strong>IUnitEntity:IsHero&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1583,14 +1854,17 @@
     <strong>IUnitEntity:IsImmobilized&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1599,14 +1873,17 @@
     <strong>IUnitEntity:IsInvulnerable&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1615,14 +1892,17 @@
     <strong>IUnitEntity:IsPerplexed&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1631,14 +1911,17 @@
     <strong>IUnitEntity:IsRax&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1647,14 +1930,17 @@
     <strong>IUnitEntity:IsShop&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1663,14 +1949,17 @@
     <strong>IUnitEntity:IsSilenced&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1679,14 +1968,17 @@
     <strong>IUnitEntity:IsStealth&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1695,14 +1987,17 @@
     <strong>IUnitEntity:IsStunned&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1711,30 +2006,42 @@
     <strong>IUnitEntity:IsTower&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:IsUnitType"></a>
-    <strong>IUnitEntity:IsUnitType&nbsp;()</strong>
+    <strong>IUnitEntity:IsUnitType&nbsp;(sType)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sType</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1743,62 +2050,92 @@
     <strong>IUnitEntity:IsValid&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:PurchaseRemaining"></a>
-    <strong>IUnitEntity:PurchaseRemaining&nbsp;()</strong>
+    <strong>IUnitEntity:PurchaseRemaining&nbsp;(itemdef)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">itemdef</span>
+        <span class="types"><span class="type">itemdef</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>void</strong> 
+
+          <span class="types"><span class="type">void</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:Sell"></a>
-    <strong>IUnitEntity:Sell&nbsp;()</strong>
+    <strong>IUnitEntity:Sell&nbsp;(item)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">item</span>
+        <span class="types"><span class="type">Item</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>void</strong> 
+
+          <span class="types"><span class="type">void</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "IUnitEntity:SellBySlot"></a>
-    <strong>IUnitEntity:SellBySlot&nbsp;()</strong>
+    <strong>IUnitEntity:SellBySlot&nbsp;(nSlot)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nSlot</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>void</strong> 
+
+          <span class="types"><span class="type">void</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1807,19 +2144,26 @@
     <strong>IUnitEntity:SwapItems&nbsp;(nSlot1, nSlot2)</strong>
     </dt>
     <dd>
-    Function 
+    Function
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>nSlot1</em></code>: </li>
-       <li><code><em>nSlot2</em></code>: </li>
+      <li><span class="parameter">nSlot1</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+      <li><span class="parameter">nSlot2</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>void</strong> 
+
+          <span class="types"><span class="type">void</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1828,14 +2172,17 @@
     <strong>IUnitEntity:TeamShare&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Function
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>void</strong> 
+
+          <span class="types"><span class="type">void</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -1845,7 +2192,7 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3</a></i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

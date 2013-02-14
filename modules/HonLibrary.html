@@ -40,7 +40,7 @@
 <ul>
   <li><a href="../modules/BotMetaData.html">BotMetaData</a></li>
   <li><a href="../modules/CBotBrain.html">CBotBrain</a></li>
-  <li><a href="../modules/CBotMetaData.html">CBotMetaData</a></li>
+  <li><a href="../modules/CBotMetaDataLink.html">CBotMetaDataLink</a></li>
   <li><a href="../modules/CBotMetaDataNode.html">CBotMetaDataNode</a></li>
   <li><a href="../modules/CItemDefinition.html">CItemDefinition</a></li>
   <li><a href="../modules/CTeamBotBrain.html">CTeamBotBrain</a></li>
@@ -63,83 +63,84 @@
 <p>Hon library</p>
 <p></p>
 
+
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#HoN.CanSeePosition">HoN.CanSeePosition&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.CanSeePosition">HoN.CanSeePosition&nbsp;(vecPos)</a></td>
+	<td class="summary">Can see position</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.DrawDebugLine">HoN.DrawDebugLine&nbsp;(vecStart, vecEnd, bArrow, sColor)</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.DrawDebugLine">HoN.DrawDebugLine&nbsp;(vecStart, vecEnd [, bArrow] [, sColor])</a></td>
+	<td class="summary">Draw a debug line</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.GameEntityExists">HoN.GameEntityExists&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.GameEntityExists">HoN.GameEntityExists&nbsp;(nIndex)</a></td>
+	<td class="summary">Check if the game entity exists</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetCreepWaveSpawnInterval">HoN.GetCreepWaveSpawnInterval&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Get the creep wave spawn interval</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.GetExperienceForLevel">HoN.GetExperienceForLevel&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.GetExperienceForLevel">HoN.GetExperienceForLevel&nbsp;(nLevel)</a></td>
+	<td class="summary">Gets the needed experience for the level</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetGameTime">HoN.GetGameTime&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">This is time since the lobby started</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetHellbourneTeam">HoN.GetHellbourneTeam&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the hellbourne team</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.GetHeroes">HoN.GetHeroes&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.GetHeroes">HoN.GetHeroes&nbsp;(nTeam)</a></td>
+	<td class="summary">Gets all heroes on the team</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.GetItemDefinition">HoN.GetItemDefinition&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.GetItemDefinition">HoN.GetItemDefinition&nbsp;(sItemName)</a></td>
+	<td class="summary">Gets the item definition for the item</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetLegionTeam">HoN.GetLegionTeam&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the legion team</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetMatchTime">HoN.GetMatchTime&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">This is time since the 0:00 mark (nil if before)</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.GetMetaTable">HoN.GetMetaTable&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.GetMetaTable">HoN.GetMetaTable&nbsp;(sObjectType)</a></td>
+	<td class="summary">Gets meta table</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetNeutralTeam">HoN.GetNeutralTeam&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the neutral team</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetTeamBotBrain">HoN.GetTeamBotBrain&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the team bot brain</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetTimeUntilCreepWaveSpawn">HoN.GetTimeUntilCreepWaveSpawn&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the time until creep wave spawns</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetTotalTime">HoN.GetTotalTime&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the total time</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetTreesInRadius">HoN.GetTreesInRadius&nbsp;(vecCenter, nRadius)</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the trees in radius</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#HoN.GetUnitsInRadius">HoN.GetUnitsInRadius&nbsp;(vecCenter, nRadius, nMask)</a></td>
-	<td class="summary">Function</td>
+	<td class="summary">Gets the units in radius</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#HoN.WillBlockNeutralSpawn">HoN.WillBlockNeutralSpawn&nbsp;()</a></td>
-	<td class="summary">Function</td>
+	<td class="name" nowrap><a href="#HoN.WillBlockNeutralSpawn">HoN.WillBlockNeutralSpawn&nbsp;(vecPos)</a></td>
+	<td class="summary">Checks if position will block neutral spawn</td>
 	</tr>
 </table>
 
@@ -148,60 +149,83 @@
 
 
     <h2><a name="Functions"></a>Functions</h2>
-    
+
     <dl class="function">
     <dt>
     <a name = "HoN.CanSeePosition"></a>
-    <strong>HoN.CanSeePosition&nbsp;()</strong>
+    <strong>HoN.CanSeePosition&nbsp;(vecPos)</strong>
     </dt>
     <dd>
-    Function 
+    Can see position
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vecPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.DrawDebugLine"></a>
-    <strong>HoN.DrawDebugLine&nbsp;(vecStart, vecEnd, bArrow, sColor)</strong>
+    <strong>HoN.DrawDebugLine&nbsp;(vecStart, vecEnd [, bArrow] [, sColor])</strong>
     </dt>
     <dd>
-    Function 
+    Draw a debug line
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vecStart</em></code>: </li>
-       <li><code><em>vecEnd</em></code>: </li>
-       <li><code><em>bArrow</em></code>: </li>
-       <li><code><em>sColor</em></code>: </li>
+      <li><span class="parameter">vecStart</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">vecEnd</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">bArrow</span>
+        <span class="types"><span class="type">bool</span></span>
+       defaults to false</li>
+      <li><span class="parameter">sColor</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+       defaults to yellow</li>
     </ul>
 
 
-    <h3>Returns:</h3>
-    <ol>
-        <strong>void</strong> 
-    </ol>
+
 
 
 </dd>
     <dt>
     <a name = "HoN.GameEntityExists"></a>
-    <strong>HoN.GameEntityExists&nbsp;()</strong>
+    <strong>HoN.GameEntityExists&nbsp;(nIndex)</strong>
     </dt>
     <dd>
-    Function 
+    Check if the game entity exists
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nIndex</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -210,30 +234,42 @@
     <strong>HoN.GetCreepWaveSpawnInterval&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Get the creep wave spawn interval
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.GetExperienceForLevel"></a>
-    <strong>HoN.GetExperienceForLevel&nbsp;()</strong>
+    <strong>HoN.GetExperienceForLevel&nbsp;(nLevel)</strong>
     </dt>
     <dd>
-    Function 
+    Gets the needed experience for the level
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nLevel</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -242,14 +278,17 @@
     <strong>HoN.GetGameTime&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    This is time since the lobby started
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -258,46 +297,67 @@
     <strong>HoN.GetHellbourneTeam&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the hellbourne team
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.GetHeroes"></a>
-    <strong>HoN.GetHeroes&nbsp;()</strong>
+    <strong>HoN.GetHeroes&nbsp;(nTeam)</strong>
     </dt>
     <dd>
-    Function 
+    Gets all heroes on the team
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">nTeam</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>unit</strong> }
+
+          <span class="types"><span class="type">Table{unit}</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.GetItemDefinition"></a>
-    <strong>HoN.GetItemDefinition&nbsp;()</strong>
+    <strong>HoN.GetItemDefinition&nbsp;(sItemName)</strong>
     </dt>
     <dd>
-    Function 
+    Gets the item definition for the item
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sItemName</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>itemdef</strong> 
+
+          <span class="types"><span class="type">itemdef</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -306,14 +366,17 @@
     <strong>HoN.GetLegionTeam&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the legion team
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -322,30 +385,42 @@
     <strong>HoN.GetMatchTime&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    This is time since the 0:00 mark (nil if before)
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.GetMetaTable"></a>
-    <strong>HoN.GetMetaTable&nbsp;()</strong>
+    <strong>HoN.GetMetaTable&nbsp;(sObjectType)</strong>
     </dt>
     <dd>
-    Function 
+    Gets meta table
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">sObjectType</span>
+        <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> 
+
+          <span class="types"><span class="type">Table</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -354,14 +429,17 @@
     <strong>HoN.GetNeutralTeam&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the neutral team
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -370,14 +448,17 @@
     <strong>HoN.GetTeamBotBrain&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the team bot brain
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>teambot</strong> 
+
+          <span class="types"><span class="type">teambot</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -386,14 +467,17 @@
     <strong>HoN.GetTimeUntilCreepWaveSpawn&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the time until creep wave spawns
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -402,14 +486,17 @@
     <strong>HoN.GetTotalTime&nbsp;()</strong>
     </dt>
     <dd>
-    Function 
-
+    Gets the total time
 
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Number</strong> 
+
+          <span class="types"><span class="type">Number</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -418,19 +505,26 @@
     <strong>HoN.GetTreesInRadius&nbsp;(vecCenter, nRadius)</strong>
     </dt>
     <dd>
-    Function 
+    Gets the trees in radius
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vecCenter</em></code>: </li>
-       <li><code><em>nRadius</em></code>: </li>
+      <li><span class="parameter">vecCenter</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">nRadius</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>unit</strong> ,...}
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {unit, ...} a table of units
     </ol>
+
+
 
 
 </dd>
@@ -439,36 +533,54 @@
     <strong>HoN.GetUnitsInRadius&nbsp;(vecCenter, nRadius, nMask)</strong>
     </dt>
     <dd>
-    Function 
+    Gets the units in radius
 
     <h3>Parameters:</h3>
     <ul>
-       <li><code><em>vecCenter</em></code>: </li>
-       <li><code><em>nRadius</em></code>: </li>
-       <li><code><em>nMask</em></code>: </li>
+      <li><span class="parameter">vecCenter</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+      <li><span class="parameter">nRadius</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
+      <li><span class="parameter">nMask</span>
+        <span class="types"><span class="type">number</span></span>
+      </li>
     </ul>
-
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Table</strong> {<strong>unit</strong> ,...}
+
+          <span class="types"><a class="type" href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+        {unit, ...} a table of units
     </ol>
+
+
 
 
 </dd>
     <dt>
     <a name = "HoN.WillBlockNeutralSpawn"></a>
-    <strong>HoN.WillBlockNeutralSpawn&nbsp;()</strong>
+    <strong>HoN.WillBlockNeutralSpawn&nbsp;(vecPos)</strong>
     </dt>
     <dd>
-    Function 
+    Checks if position will block neutral spawn
 
-
+    <h3>Parameters:</h3>
+    <ul>
+      <li><span class="parameter">vecPos</span>
+        <span class="types"><a class="type" href="../modules/Vector3.html#">Vector3</a></span>
+      </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
-        <strong>Boolean</strong> 
+
+          <span class="types"><span class="type">Boolean</span></span>
+
     </ol>
+
+
 
 
 </dd>
@@ -478,7 +590,7 @@
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.2</a></i>
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3</a></i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
