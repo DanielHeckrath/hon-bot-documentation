@@ -1,15 +1,18 @@
 --- BotMetaDataLink members
--- @module CBotMetaData
+-- @module CBotMetaDataLink
 
 --- Function
--- @treturn String
+-- @treturn string
 function CBotMetaDataLink:GetName()
+end
 
 --- Function
 -- @treturn Vector3
 function CBotMetaDataLink:GetPosition()
+end
 
 --- Function
--- @param sName param
--- @treturn String/Number/Boolean
+-- @tparam string sName
+-- @treturn ?string|number|bool
 function CBotMetaDataLink:GetProperty(sName)
+end
